@@ -1,12 +1,12 @@
-from Sibyl_System.plugins import to_load
-from Sibyl_System import (
+from VOID.plugins import to_load
+from VOID import (
     System,
     system_cmd,
     INSPECTORS,
     ENFORCERS,
     Sibyl_logs,
 )
-from Sibyl_System.strings import on_string
+from VOID.strings import on_string
 import logging
 import importlib
 import asyncio
@@ -40,21 +40,21 @@ for load in to_load:
         print("------------------------------------")
 
 
-@System.on(system_cmd(pattern=r"scyinfo", allow_enforcer=True))
+@System.on(system_cmd(pattern=r"vinfo", allow_enforcer=True))
 async def status(event):
     msg = await event.reply("Diagnosing Scythe System.")
     time.sleep(1)
-    await msg.edit("Sequencing Scythe Code  ■□□□□")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔸🔸🔸🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Scythe Code  ■■□□□")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Scythe Code  ■■■□□")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔹🔹🔸🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Scythe Code  ■■■■□")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Scythe Code  ■■■■■")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("Connection successful!")
+    await msg.edit("Connection to 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ successful!")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -106,7 +106,7 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        await System.send_message(Sibyl_logs, "I'm up!")
+        await System.send_message(Sibyl_logs, "I'm up VOID SAMA!")
     await System.run_until_disconnected()
 
 
