@@ -308,7 +308,7 @@ async def revive(event):
     await a.edit("Revert request sent to 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ. This might take 10minutes or so.")
 
 
-@System.on(system_cmd(pattern=r"sibyl logs"))
+@System.on(system_cmd(pattern=r"VOID logs"))
 async def logs(event):
     await System.send_file(event.chat_id, "log.txt")
 
