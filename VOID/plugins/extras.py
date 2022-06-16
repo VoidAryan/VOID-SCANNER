@@ -3,10 +3,10 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 
-from Sibyl_System.plugins.Mongo_DB.tree import add_inspector, add_enforcers, get_data
-from Sibyl_System import ENFORCERS, INSPECTORS, SIBYL, session
-from Sibyl_System import System, system_cmd
-from Sibyl_System import Sibyl_logs
+from VOID.plugins.Mongo_DB.tree import add_inspector, add_enforcers, get_data
+from VOID import ENFORCERS, INSPECTORS, SIBYL, session
+from VOID import System, system_cmd
+from VOID import Sibyl_logs
 
 from datetime import datetime
 from urllib.parse import urlparse, urlunparse
@@ -16,7 +16,7 @@ import re
 import json
 
 try:
-    from Sibyl_System import HEROKU_API_KEY, HEROKU_APP_NAME
+    from VOID import HEROKU_API_KEY, HEROKU_APP_NAME
 
     heroku_conn = heroku3.from_key(HEROKU_API_KEY)
     app = heroku_conn.app(HEROKU_APP_NAME)
@@ -55,7 +55,7 @@ async def addenf(event) -> None:
         data["ENFORCERS"].append(u_id)
         with open(json_file, "w") as file:
             json.dump(data, file, indent=4)
-        await System.send_message(event.chat_id, "Added to enforcers, Restarting...")
+        await System.send_message(event.chat_id, "Added to enforcers, Restarting 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ...")
         if not event.from_id.user_id in SIBYL:
             await add_enforcers(event.from_id.user_id, u_id)
         await System.disconnect()
@@ -135,14 +135,14 @@ async def join(event) -> None:
         await System.send_message(event.chat_id, "Joined chat!")
         await System.send_message(
             Sibyl_logs,
-            f"{(await event.get_sender()).first_name} made Scythe join {private.group(5)}",
+            f"{(await event.get_sender()).first_name} made 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ join {private.group(5)}",
         )
     else:
         await System(JoinChannelRequest(link))
-        await System.send_message(event.chat_id, "Joined chat!")
+        await System.send_message(event.chat_id, "【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ Joined chat!")
         await System.send_message(
             Sibyl_logs,
-            f"{(await event.get_sender()).first_name} made Scythe join {link}",
+            f"{(await event.get_sender()).first_name} made 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ join {link}",
         )
 
 
@@ -172,7 +172,7 @@ async def addins(event) -> None:
         data["INSPECTORS"].append(u_id)
         with open(json_file, "w") as file:
             json.dump(data, file, indent=4)
-        await System.send_message(event.chat_id, "Added to Inspectors, Restarting...")
+        await System.send_message(event.chat_id, "Added to Inspectors, Restarting 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ...")
         await add_inspector(event.from_id.user_id, u_id)
         await System.disconnect()
         os.execl(sys.executable, sys.executable, *sys.argv)
@@ -281,11 +281,11 @@ async def leave(event) -> None:
     if c_id:
         await System(LeaveChannelRequest(int(c_id.group(0))))
         await System.send_message(
-            event.chat_id, f"Azeon has left chat with id[-{c_id.group(1)}]"
+            event.chat_id, f"【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ has left chat with id[-{c_id.group(1)}]"
         )
     else:
         await System(LeaveChannelRequest(link))
-        await System.send_message(event.chat_id, f"Azeon has left chat[{link}]")
+        await System.send_message(event.chat_id, f"【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ has left chat[{link}]")
 
 
 @System.on(system_cmd(pattern=r"get_redirect ", allow_inspectors=True))
