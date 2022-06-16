@@ -1,6 +1,6 @@
 from Sibyl_System import MONGO_CLIENT
 
-db = MONGO_CLIENT["Sibyl"]["Main"]
+db = MONGO_CLIENT["VOID"]["Main"]
 
 
 async def update_wlc_blacklist(word, add=False):
