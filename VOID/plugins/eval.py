@@ -1,5 +1,5 @@
 import sys
-from Sibyl_System import system_cmd, System
+from VOID import system_cmd, System
 from io import StringIO
 import traceback
 import inspect
