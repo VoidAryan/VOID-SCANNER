@@ -1,5 +1,5 @@
-from Sibyl_System import System, apiClient, session
-from Sibyl_System.strings import scan_request_string, reject_string, check_ban_string
+from VOID import System, apiClient, session
+from VOID.strings import scan_request_string, reject_string, check_ban_string
 
 from telethon import events, custom
 
@@ -27,7 +27,7 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!]start"))
 async def sup(event):
-    await event.reply("Scythe is ready [.](https://telegra.ph/file/a347199d5506e7b2cf2b0.jpg)")
+    await event.reply("【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ is ready. [👋](https://telegra.ph/file/75709bf9ff489af0591dd.jpg)")
 
 
 @System.bot.on(events.NewMessage(pattern="[/!]help"))
