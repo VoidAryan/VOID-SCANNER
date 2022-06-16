@@ -2,7 +2,7 @@ from Sibyl_System import MONGO_CLIENT
 from datetime import datetime
 from random import choice
 
-db = MONGO_CLIENT["Sibyl"]["Main"]
+db = MONGO_CLIENT["VOID"]["Main"]
 
 
 async def get_data() -> dict:
