@@ -1,5 +1,5 @@
 import json
-from Sibyl_System import INSPECTORS, ENFORCERS, ELEVATED_USERS_FILE
+from VOID import INSPECTORS, ENFORCERS, ELEVATED_USERS_FILE
 
 with open(ELEVATED_USERS_FILE, "r") as f:
     data = json.load(f)
