@@ -1,13 +1,13 @@
 on_string = """
 ✯ Connection successful! ✯
- ╘ Welcome {Enforcer} {name} ✯
- ╘ You are a valid user! ✯
+ ╘ Welcome {Enforcer} {name} 
+ ╘ You are a valid user! In 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ
 """
 
 # Make sure not to change these too much
 # If you still wanna change it change the regex too
 scan_request_string = """
-$SCAN
+$SCAN @voidaryan 
 Cymatic Scan Request!
 **Enforcer:** {enforcer}
 **User scanned:** {spammer}
@@ -24,7 +24,7 @@ proof_string = """
 
 
 forced_scan_string = """
-$FORCED
+$FORCED @voidaryan
 **Inspector:** {ins}
 **Target:** {spammer}
 **Reason:** `{reason}`
