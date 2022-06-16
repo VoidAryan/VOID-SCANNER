@@ -1,4 +1,4 @@
-from Sibyl_System import system_cmd, System
+from VOID import system_cmd, System
 from PIL import Image, ImageDraw, ImageFont
 import os
 
