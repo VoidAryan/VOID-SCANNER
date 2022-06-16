@@ -1,4 +1,4 @@
 @echo off
-TITLE Sibyl_System
+TITLE VOID
 :: Enables virtual env mode and then starts Sibyl_System
-env\scripts\activate.bat && py -m Sibyl_System
+env\scripts\activate.bat && py -m VOID
