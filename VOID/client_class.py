@@ -8,7 +8,7 @@ from .strings import (
 )
 from .utils import FlagParser, ParseError
 
-from Sibyl_System import (
+from VOID import (
     Sibyl_logs,
     Sibyl_approved_logs,
     GBAN_MSG_LOGS,
@@ -16,7 +16,7 @@ from Sibyl_System import (
     API_ID_KEY,
     API_HASH_KEY,
 )
-from Sibyl_System.plugins.Mongo_DB.gbans import update_gban, delete_gban
+from VOID.plugins.Mongo_DB.gbans import update_gban, delete_gban
 
 
 class SibylClient(TelegramClient):
