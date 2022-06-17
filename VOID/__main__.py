@@ -42,7 +42,7 @@ for load in to_load:
 
 @System.on(system_cmd(pattern=r"vinfo", allow_enforcer=True))
 async def status(event):
-    msg = await event.reply("Diagnosing Scythe System.")
+    msg = await event.reply("Initialising User's Data....")
     time.sleep(1)
     await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ  🔹🔸🔸🔸🔸")
     time.sleep(1)
@@ -62,7 +62,7 @@ async def status(event):
     await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
 
 
-@System.on(system_cmd(pattern="scythe stats"))
+@System.on(system_cmd(pattern="VOID stats"))
 async def stats(event):
     msg = f"Processed {System.processed} messages since last restart."
     msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"
