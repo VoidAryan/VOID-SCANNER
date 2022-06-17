@@ -192,7 +192,7 @@ async def scan(event, flags):
         
         creator, admins = await get_chat_creator_and_admins(event, ts_chat.id, True)
 
-        await event.reply("Connecting to Scythe for a cymatic scan.")
+        await event.reply("Connecting to VOID for a cymatic scan.")
 
         if flags.f and executer.id in INSPECTORS:
             msg = await System.send_message(
