@@ -23,7 +23,7 @@ FAILED_TO_LOAD = {}
 
 for load in to_load:
     try:
-        imported = importlib.import_module("Sibyl_System.plugins." + load)
+        imported = importlib.import_module("VOID.plugins." + load)
         if not hasattr(imported, "__plugin_name__"):
             imported.__plugin_name__ = imported.__name__
 
