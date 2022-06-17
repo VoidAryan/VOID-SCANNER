@@ -1,4 +1,4 @@
-from Sibyl_System import MONGO_CLIENT
+from VOID import MONGO_CLIENT
 from datetime import datetime
 from random import choice
 
