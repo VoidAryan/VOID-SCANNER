@@ -37,13 +37,13 @@ if ENV:
     GBAN_MSG_LOGS = int(os.environ.get("GBAN_MSG_LOGS"))
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 else:
-    import Sibyl_System.config as Config
+    import VOID.config as Config
 
     API_ID_KEY = Config.API_ID
     API_HASH_KEY = Config.API_HASH
     STRING_SESSION = Config.STRING_SESSION
     MONGO_DB_URL = Config.MONGO_DB_URL
-    with open(os.path.join(os.getcwd(), "Sibyl_System/elevated_users.json"), "r") as f:
+    with open(os.path.join(os.getcwd(), "VOID/elevated_users.json"), "r") as f:
         data = json.load(f)
     SIBYL = data["SIBYL"]
     ENFORCERS = data["ENFORCERS"]
@@ -68,7 +68,7 @@ except:
     print(traceback.format_exc())
     exit(1)
 
-collection = MONGO_CLIENT["Sibyl"]["Main"]
+collection = MONGO_CLIENT["VOID"]["Main"]
 
 
 async def make_collections() -> str:
