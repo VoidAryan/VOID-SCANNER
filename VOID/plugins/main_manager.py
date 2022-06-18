@@ -548,7 +548,7 @@ async def reject(event):
 
 
 help_plus = """
-Here is the help for **Main**:
+[۞](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Here is the help for **Main**:
 
 Commands:
     `scan` - Reply to a message WITH reason to send a request to Inspectors/Sibyl for judgement
