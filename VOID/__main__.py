@@ -44,7 +44,7 @@ for load in to_load:
 async def status(event):
     msg = await event.reply("Initialising User's Data....")
     time.sleep(1)
-    await msg.edit("Sequencing  Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ 🔹🔸🔸🔸🔸")
+    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ 🔹🔸🔸🔸🔸")
     time.sleep(1)
     await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸🔸")
     time.sleep(1)
