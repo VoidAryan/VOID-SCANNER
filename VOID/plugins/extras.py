@@ -301,7 +301,8 @@ async def redirect(event) -> None:
 
 
 help_plus = """
-Help!
+[×](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Help!
+
 `addenf` - Adds a user as an enforcer.
 Format : addenf <user id / as reply>
 `rmenf` - Removes a user from enforcers.
@@ -320,8 +321,10 @@ Format : leave <chat username or id>
 Format : resolve <chat invite link>
 `get_redirect` - Follows redirect of a link.
 Format : get_redirect <URL>
+
 **Notes:**
 `/` `?` `.` `!` are supported prefixes.
+
 **Example:** `/addenf` or `?addenf` or `.addenf`
 """
 
