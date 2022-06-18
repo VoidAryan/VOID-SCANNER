@@ -4,7 +4,6 @@ from telethon import events
 from telethon.sessions import StringSession
 from motor import motor_asyncio
 import aiohttp
-import apiClient
 import json
 from datetime import datetime
 
