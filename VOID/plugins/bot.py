@@ -30,7 +30,7 @@ async def sup(event):
     await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/693871aaf0f8e81573d68.png)")
 
 
-@System.bot.on(events.NewMessage(pattern="[/!?]help"))
+@System.bot.on(events.NewMessage(pattern="[/!?]vhelp"))
 async def help(event):
     if not event.is_private:
         return
