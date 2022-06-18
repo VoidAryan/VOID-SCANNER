@@ -54,7 +54,7 @@ async def status(event):
     time.sleep(1)
     await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful!")
+    await msg.edit("Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful! [🤞](https://telegra.ph/file/693871aaf0f8e81573d68.png)")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
