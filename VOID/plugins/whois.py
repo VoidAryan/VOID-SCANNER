@@ -27,7 +27,7 @@ async def whois(event):
     )
 
 
-help_plus = """ Here is Help for **Whois** -
+help_plus = """ [۞](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Here is Help for **Whois** -
 `whois` - get data of the user
 **Notes:**
 `/` `?` `.` `!` are supported prefixes.
