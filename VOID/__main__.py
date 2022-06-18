@@ -81,9 +81,9 @@ async def send_help(event):
     try:
         help_for = event.text.split(" ", 1)[1].lower()
     except IndexError:
-        msg = "List of plugins with help text [💫](https://telegra.ph/file/8eaf3843dc6fb243f9ab1.jpg) :\n\n"
+        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ • ꜱᴄᴀɴɴᴇʀ [💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) :\n\n"
         for x in HELP.keys():
-            msg += f"× `{x.capitalize()}`\n\n"
+            msg += f"۞ `{x.capitalize()}`\n"
         await event.reply(msg)
         return
     if help_for in HELP:
