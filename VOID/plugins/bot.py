@@ -27,7 +27,7 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!?]start"))
 async def sup(event):
-    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/693871aaf0f8e81573d68.png)")
+    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)")
 
 
 @System.bot.on(events.NewMessage(pattern="[/!?]vhelp"))
@@ -35,7 +35,7 @@ async def help(event):
     if not event.is_private:
         return
     await event.reply("""
-Add this bot to any group and It will warn/ban If any gbanned user joins.
+Add this bot to any group and It will warn/ban If any gbanned user joins [💢](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg).
 **Commands:**
     `help` - This text.
     `start` - Start the bot.
@@ -64,18 +64,18 @@ async def callback_handler(event):
         )
         return
     await event.answer(
-        "I have sent you a message, Reply to it to overwrite reason/specify reject reason, Otherwise ignore",
+        "I have sent you a message, Reply to it to overwrite reason/specify reject reason, Otherwise ignore [☆](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)",
         alert=True,
     )
     sender = await event.get_sender()
     async with event.client.conversation(sender.id, timeout=15) as conv:
         if split[0] == "approve":
             await conv.send_message(
-                "You approved a scan it seems, Would you like to overwrite reason?"
+                "You approved a scan it seems, Would you like to overwrite reason [?](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)"
             )
         else:
             await conv.send_message(
-                "You rejected a scan it seems, Would you like to give rejection reason?"
+                "You rejected a scan it seems, Would you like to give rejection reason [?](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)"
             )
         try:
             r = await conv.get_response()
