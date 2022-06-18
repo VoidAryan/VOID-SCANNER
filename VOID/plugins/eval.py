@@ -66,7 +66,8 @@ async def async_exec(code, event):
 __plugin_name__ = "py"
 
 help_plus = """
-Run code using **exec** 
+Run code using **exec** [💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg)
+
 CMD - <x or ex or exec or execute> your code here
 EXAMPLE - `!VOID x print("OWO")`
 Run code using **eval**
