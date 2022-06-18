@@ -1,6 +1,7 @@
 help_plus = """
 HERE IS HELP FOR BANCODES :-
 ✣ {Vx01} - SCAMMER.
+✣ {Vx02} - COMMUNITY HATE.
 ✣ {Vx03} - ABUSE SPAM.
 ✣ {Vx04} - NSFW SPAMMER.
 ✣ {Vx05} - IMPERSONATION.
