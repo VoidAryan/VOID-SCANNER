@@ -1,5 +1,5 @@
 help_plus = """
-HERE IS HELP FOR BANCODES :-
+[💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) HERE IS HELP FOR BANCODES :-
 ✣ {Vx01} - SCAMMER.
 ✣ {Vx02} - COMMUNITY HATE.
 ✣ {Vx03} - ABUSE SPAM.
