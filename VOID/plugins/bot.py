@@ -36,15 +36,18 @@ async def help(event):
         return
     await event.reply("""
 Add this bot to any group and It will warn/ban If any gbanned user joins [💢](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg).
-**Commands:**
+
+**× Commands:**
     `help` - This text.
     `start` - Start the bot.
     `alertmode` - Change alertmode.
-        **Available modes:**
-        `silent-ban` - Silently ban user.
-        `ban` - Ban and send a message In the chat to say the user was banned.
-        `warn` - Warn that a gbanned user has joined but do nothing.
-All commands can be used with ! , / or ?""")
+        
+**× Available modes:**
+    `silent-ban` - Silently ban user.
+    `ban` - Ban and send a message In the chat to say the user was banned.
+    `warn` - Warn that a gbanned user has joined but do nothing.
+
+× All commands can be used with ! , / or ?""")
 
 
 @System.bot.on(events.CallbackQuery(pattern=r"(approve|reject)_(\d*)"))
