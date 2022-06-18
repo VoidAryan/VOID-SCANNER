@@ -4,7 +4,7 @@ import sys
 import subprocess
 
 
-@System.on(system_cmd(pattern=r"VOID gitpull"))
+@System.on(system_cmd(pattern=r"v gitpull"))
 async def gitpull(event):
     subprocess.Popen("git pull", stdout=subprocess.PIPE, shell=True)
     await event.reply("Git pulled probably.")
@@ -12,17 +12,17 @@ async def gitpull(event):
     os.execv("start.bat", sys.argv)
 
 
-@System.on(system_cmd(pattern=r"【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ restart"))
+@System.on(system_cmd(pattern=r"Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ restart...."))
 async def reboot(event):
     if event.fwd_from:
         return
-    await event.reply("Restarting 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ.....")
+    await event.reply("Restarting Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ.....")
     await System.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     sys.exit()
 
 
-@System.on(system_cmd(pattern=r"VOID shutdown"))
+@System.on(system_cmd(pattern=r"v shutdown"))
 async def shutdown(event):
     if event.fwd_from:
         return
