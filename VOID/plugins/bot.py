@@ -1,4 +1,4 @@
-from VOID import System, apiClient, session
+from VOID import System, session
 from VOID.strings import scan_request_string, reject_string, check_ban_string
 
 from telethon import events, custom
@@ -27,7 +27,7 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!]start"))
 async def sup(event):
-    await event.reply("【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ is ready. [👋](https://telegra.ph/file/75709bf9ff489af0591dd.jpg)")
+    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/693871aaf0f8e81573d68.png)")
 
 
 @System.bot.on(events.NewMessage(pattern="[/!]help"))
