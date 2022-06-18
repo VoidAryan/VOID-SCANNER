@@ -1,7 +1,9 @@
 on_string = """
-✯ Connection successful! ✯
- ╘ Welcome {Enforcer} {name} 
- ╘ You are a valid user! In 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ
+۞ Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful 🔰
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+۞ Welcome {enforcer} {name}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+۞ You are verified user in our scanner ⚔
 """
 
 # Make sure not to change these too much
