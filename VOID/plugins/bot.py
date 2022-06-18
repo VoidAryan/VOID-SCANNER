@@ -34,8 +34,7 @@ async def sup(event):
 async def help(event):
     if not event.is_private:
         return
-    await event.reply(
-        """
+    await event.reply("""
 Add this bot to any group and It will warn/ban If any gbanned user joins.
 **Commands:**
     `help` - This text.
@@ -45,9 +44,7 @@ Add this bot to any group and It will warn/ban If any gbanned user joins.
         `silent-ban` - Silently ban user.
         `ban` - Ban and send a message In the chat to say the user was banned.
         `warn` - Warn that a gbanned user has joined but do nothing.
-All commands can be used with ! or /.
-    """
-    )
+All commands can be used with ! , / or ?""")
 
 
 @System.bot.on(events.CallbackQuery(pattern=r"(approve|reject)_(\d*)"))
