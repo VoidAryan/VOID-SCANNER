@@ -78,7 +78,7 @@ association_scan_request = {}
 @System.command(
     e=system_cmd(pattern=r"scan ", allow_enforcer=True),
     group="main",
-    help="Reply to a message WITH reason to send a request to Inspect in 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ",
+    help="Reply to a message WITH reason to send a request to Inspect in Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ",
     flags=[
         Flag(
             "-f",
@@ -192,7 +192,7 @@ async def scan(event, flags):
         
         creator, admins = await get_chat_creator_and_admins(event, ts_chat.id, True)
 
-        await event.reply("Connecting to VOID for a cymatic scan.")
+        await event.reply("Connecting to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ for a cymatic scan.")
 
         if flags.f and executer.id in INSPECTORS:
             msg = await System.send_message(
@@ -248,7 +248,7 @@ async def scan(event, flags):
     if replied.media:
         await replied.forward_to(Sibyl_logs)
     
-    await event.reply("Connecting to 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ for a disaster scan.")
+    await event.reply("Connecting to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ for a disaster scan.")
     if req_proof and req_user:
         await replied.forward_to(Sibyl_logs)
         await System.gban(
@@ -295,7 +295,7 @@ async def revive(event):
     executor = await event.get_sender()
     if event.sender_id in ENFORCERS:
         chatlink = f"t.me/c/{(str(event.chat_id)).replace('-100', '')}/{event.id}"
-        await event.reply("Connecting to 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ for a cymatic revert.")
+        await event.reply("Connecting to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ for a cymatic revert.")
         msg = await System.send_message(Sibyl_logs, revert_request_string.format(enforcer=executor.id, spammer=int(user_id), chat=chatlink))
         revert_request[msg.id] = {"user_id":user_id, "chat_id":event.chat_id, "msg_id":event.id}
         return
@@ -305,7 +305,7 @@ async def revive(event):
     ):
         await a.edit("User is not gbanned.")
         return
-    await a.edit("Revert request sent to 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ. This might take 10minutes or so.")
+    await a.edit("Revert request sent to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ. This might take 10minutes or so.")
 
 
 @System.on(system_cmd(pattern=r"VOID logs"))
