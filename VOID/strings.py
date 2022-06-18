@@ -1,5 +1,5 @@
 on_string = """
-✯ Connection successful! ✯
+[💥](https://telegra.ph/file/b885e80da5cf76057bbaa.jpg) Connection successful! ✯
  ╘ Welcome {Enforcer} {name} ✯
  ╘ You are a valid user! ✯
 """
