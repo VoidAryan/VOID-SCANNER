@@ -106,7 +106,7 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        await event.reply(Sibyl_logs, "I'm up VOID SAMA[!](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)")
+        await System.send_message(Sibyl_logs, "I'm up VOID SAMA[!](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)")
     await System.run_until_disconnected()
 
 
