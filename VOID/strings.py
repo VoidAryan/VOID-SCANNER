@@ -1,7 +1,7 @@
 on_string = """
-Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful 🔰
+Connection to Infinite • Scanner successful
 Welcome {enforcer} {name}
-You are verified user in our scanner ⚔
+You are verified user in our scanner
 """
 
 # Make sure not to change these too much
