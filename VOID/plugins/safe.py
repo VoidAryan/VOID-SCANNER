@@ -26,5 +26,5 @@ async def reboot(event):
 async def shutdown(event):
     if event.fwd_from:
         return
-    await event.reply("Shutting Down 【V๏ɪ፝֟𝔡】•  SᴄᴀɴɴᴇƦ... ")
+    await event.reply("Shutting Down Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ.....")
     await System.disconnect()
