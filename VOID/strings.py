@@ -1,8 +1,8 @@
 on_string = """
 *۞ Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful 🔰*
-*⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯*
+♤
 *۞ Welcome {enforcer} {name}*
-*⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯*
+♤
 *۞ You are verified user in our scanner ⚔*
 """
 
