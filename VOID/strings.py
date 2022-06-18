@@ -1,7 +1,7 @@
 on_string = """
 ✯ Connection successful! ✯
  ╘ Welcome {Enforcer} {name} ✯
- ╘ You are a valid user! ✯
+ ╘ You are a valid user! [✯](https://telegra.ph/file/693871aaf0f8e81573d68.png)
 """
 
 # Make sure not to change these too much
