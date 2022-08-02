@@ -1,8 +1,5 @@
-on_string = """۞ You're Verified {enforcer}
-───────────────────────
-× Name : {Name}
-───────────────────────
-۞ Thanks For Supporting
+on_string = """
+void got the best wife uffo
 """
 
 # Make sure not to change these too much
