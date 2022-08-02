@@ -1,9 +1,7 @@
 on_string = """
-۞ ʏᴏᴜ'ʀᴇ ᴠᴇʀɪғɪᴇᴅ {enforcer}
-───────────────────────
-× ɴᴀᴍᴇ : {Name}
-───────────────────────
-۞ ᴛʜᴀɴᴋs ғᴏʀ sᴜᴘᴘᴏʀᴛɪɴɢ
+• You Are Verified {enforcer}
+× Name {name}
+• Thanks For Your Support now give 69 rs
 """
 
 # Make sure not to change these too much
