@@ -1,7 +1,8 @@
-on_string = """
-[💥](https://telegra.ph/file/b885e80da5cf76057bbaa.jpg) Connection successful! ✯
- ╘ Welcome {Enforcer} {name} ✯
- ╘ You are a valid user! ✯
+on_string = """۞ ʏᴏᴜ'ʀᴇ ᴠᴇʀɪғɪᴇᴅ {enforcer}
+*───────────────────────*
+× ɴᴀᴍᴇ : {Name}
+*───────────────────────*
+۞ ᴛʜᴀɴᴋs ғᴏʀ sᴜᴘᴘᴏʀᴛɪɴɢ [【V๏ɪ፝֟𝔡】◈Network◈](t.me/voidxnetwork)
 """
 
 # Make sure not to change these too much
