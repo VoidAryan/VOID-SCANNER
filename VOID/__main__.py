@@ -54,7 +54,7 @@ async def status(event):
     time.sleep(1)
     await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("Connection to 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ successful!
+    await msg.edit("Connection to 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ successful!")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -81,7 +81,7 @@ async def send_help(event):
     try:
         help_for = event.text.split(" ", 1)[1].lower()
     except IndexError:
-        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ • ꜱᴄᴀɴɴᴇʀ [💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) :\n\n"
+        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ 【V๏ɪ፝֟𝔡】 • ꜱᴄᴀɴɴᴇʀ [💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) :\n\n"
         for x in HELP.keys():
             msg += f"۞ `{x.capitalize()}`\n"
         await event.reply(msg)
