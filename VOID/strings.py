@@ -1,7 +1,5 @@
 on_string = """
 You Are Verified {enforcer}
-Name {name}
-Thanks For Your Support now give 69 rs
 """
 
 # Make sure not to change these too much
