@@ -1,5 +1,9 @@
 on_string = """
-void got the best wife uffo
+۞ ʏᴏᴜ'ʀᴇ ᴠᴇʀɪғɪᴇᴅ {enforcer}
+───────────────────────
+× ɴᴀᴍᴇ : {Name}
+───────────────────────
+۞ ᴛʜᴀɴᴋs ғᴏʀ sᴜᴘᴘᴏʀᴛɪɴɢ
 """
 
 # Make sure not to change these too much
