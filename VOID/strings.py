@@ -1,5 +1,5 @@
 on_string = """
-You Are Verified {enforcer}
+you are verified {enforcer}
 """
 
 # Make sure not to change these too much
