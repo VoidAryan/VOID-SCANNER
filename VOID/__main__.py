@@ -44,17 +44,17 @@ for load in to_load:
 async def status(event):
     msg = await event.reply("Initialising User's Data....")
     time.sleep(1)
-    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔸🔸🔸🔸")
+    await msg.edit("🤔")
     time.sleep(1)
-    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸🔸")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ  🔹🔸🔸🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔸🔸")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹🔸")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔸")
     time.sleep(1)
-    await msg.edit("Sequencing Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹🔹")
+    await msg.edit("Sequencing 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("Connection to Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ successful! [✌](https://telegra.ph/file/693871aaf0f8e81573d68.png)")
+    await msg.edit("Connection to 【V๏ɪ፝֟𝔡】 • SᴄᴀɴɴᴇƦ successful!
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
