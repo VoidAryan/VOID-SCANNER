@@ -2,7 +2,7 @@ on_string = """۞ ʏᴏᴜ'ʀᴇ ᴠᴇʀɪғɪᴇᴅ {enforcer}
 
 × ɴᴀᴍᴇ : {Name}
 
-۞ ᴛʜᴀɴᴋs ғᴏʀ sᴜᴘᴘᴏʀᴛɪɴɢ [【V๏ɪ፝֟𝔡】◈Network◈](t.me/voidxnetwork)
+۞ ᴛʜᴀɴᴋs ғᴏʀ sᴜᴘᴘᴏʀᴛɪɴɢ 【V๏ɪ፝֟𝔡】◈Network◈
 """
 
 # Make sure not to change these too much
