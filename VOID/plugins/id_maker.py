@@ -14,7 +14,7 @@ async def image_maker(event) -> None:
     # open id photo
     id_template = Image.open("GIT.png")
     # resize user photo to fit box in id template
-    user_photo = user_photo.resize((800, 8))
+    user_photo = user_photo.resize((800, 900))
     # put image in position
     id_template.paste(user_photo, (600, 600))
     # postion on where to draw text
