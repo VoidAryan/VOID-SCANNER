@@ -55,14 +55,14 @@ async def status(event):
     await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹 🔹 🔹 🔹")
     time.sleep(1)
     await msg.edit("You Are Verified Under【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ")
-    time.sleep(2)
+    time.sleep(1)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
     time.sleep(1)
     await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
 
 
-@System.on(system_cmd(pattern="VOID stats"))
+@System.on(system_cmd(pattern="v stats"))
 async def stats(event):
     msg = f"Processed {System.processed} messages since last restart."
     msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"
