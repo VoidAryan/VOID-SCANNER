@@ -27,13 +27,12 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!?]start"))
 async def sup(event):
-    await event.reply("""
-    ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)
-    """),
     buttons = [
 [Button.url('Network', 'https://t.me/voidxnetwork')]
 
 ]
+    await event.reply(""" ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg) 
+    """, buttons=buttons)
                      
 
 
