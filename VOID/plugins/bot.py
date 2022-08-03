@@ -27,8 +27,10 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!?]start"))
 async def sup(event):
-    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)"),
-    Buttons = [
+    await event.reply("""
+    ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)
+    """
+buttons = [
     [
         InlineKeyboardButton(
             text="Aᴅᴅ ME Tᴏ Yᴏᴜʀ GC",
@@ -41,7 +43,8 @@ async def sup(event):
     [
         InlineKeyboardButton(text="Support", url="https://t.me/komisansupport"),
     ],
-]
+],
+                     )
 
 
 @System.bot.on(events.NewMessage(pattern="[/!?]vhelp"))
