@@ -16,7 +16,7 @@ async def image_maker(event) -> None:
     # resize user photo to fit box in id template
     user_photo = user_photo.resize((1159, 1241))
     # put image in position
-    id_template.paste(user_photo, (1003, 641))
+    id_template.paste(user_photo, (800, 641))
     # postion on where to draw text
     draw = ImageDraw.Draw(id_template)
     color = "rgb(0, 0, 0)"  # black
@@ -24,7 +24,7 @@ async def image_maker(event) -> None:
     font2 = ImageFont.truetype("font2.ttf", size=100)
     # put text in image
     draw.text(
-        (1200, 360),
+        (1150, 360),
         replied_user.sender.first_name.replace("\u2060", ""),
         fill=color,
         font=font2,
