@@ -5,3 +5,4 @@ heroku3
 pillow
 dnspython
 motor
+dispatcher
