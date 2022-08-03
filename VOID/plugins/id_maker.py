@@ -16,7 +16,7 @@ async def image_maker(event) -> None:
     # resize user photo to fit box in id template
     user_photo = user_photo.resize((900, 1000))
     # put image in position
-    id_template.paste(user_photo, (700, 560))
+    id_template.paste(user_photo, (750, 540))
     # postion on where to draw text
     draw = ImageDraw.Draw(id_template)
     color = "rgb(0, 0, 0)"  # black
