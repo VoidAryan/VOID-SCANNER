@@ -31,7 +31,12 @@ async def sup(event):
 [Button.url('Network', 'https://t.me/voidxnetwork')]
 
 ]
-    await event.reply(""" ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg) 
+    await event.reply("""
+ʜᴇʏ {mention},
+
+❂ ɪᴍ 【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ @VoidxNetwork
+
+❂ ᴛʜɪꜱ ꜱᴄᴀɴɴᴇʀ ɪꜱ ᴛᴏ ᴋᴇᴇᴘ ᴜꜱ ꜱᴀғᴇ ғʀᴏᴍ ᴛᴏxɪᴄɪᴛʏ ᴏᴠᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ʙʏ ɢʙᴀɴɴɪɴɢ ᴛᴏxɪᴄ ᴜꜱᴇʀ ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ
     """, buttons=buttons)
                      
 
