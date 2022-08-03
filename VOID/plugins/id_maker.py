@@ -16,7 +16,7 @@ async def image_maker(event) -> None:
     # resize user photo to fit box in id template
     user_photo = user_photo.resize((900, 1000))
     # put image in position
-    id_template.paste(user_photo, (900, 530))
+    id_template.paste(user_photo, (860, 530))
     # postion on where to draw text
     draw = ImageDraw.Draw(id_template)
     color = "rgb(0, 0, 0)"  # black
@@ -37,7 +37,7 @@ async def image_maker(event) -> None:
         force_document = False
     await System.send_message(
         event.chat_id,
-        "Generated User ID",
+        "Generated User ID {mention}",
         reply_to=event.message.id,
         file="user_id.png",
         force_document=force_document,
