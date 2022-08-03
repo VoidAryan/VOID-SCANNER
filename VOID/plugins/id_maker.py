@@ -12,7 +12,7 @@ async def image_maker(event) -> None:
     )
     user_photo = Image.open("user.png")
     # open id photo
-    id_template = Image.open("ID.png")
+    id_template = Image.open("GIT.png")
     # resize user photo to fit box in id template
     user_photo = user_photo.resize((500, 500))
     # put image in position
