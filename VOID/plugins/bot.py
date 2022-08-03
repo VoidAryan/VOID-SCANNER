@@ -1,7 +1,7 @@
 from VOID import System, session
 from VOID.strings import scan_request_string, reject_string, check_ban_string
 
-from telethon import events, custom, Buttons
+from telethon import events, custom, Button
 
 import re
 import asyncio
