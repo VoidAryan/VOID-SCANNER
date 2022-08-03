@@ -1,5 +1,10 @@
 on_string = """
-you are verified {enforcer}
+「 ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴛᴇᴀᴍ 7 」
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• ɴᴀᴍᴇ : V0ID
+• ʀᴀɴᴋ : Inspector
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+「 ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ ! 」
 """
 
 # Make sure not to change these too much
