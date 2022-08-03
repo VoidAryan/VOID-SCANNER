@@ -1,7 +1,7 @@
 from VOID import System, session
 from VOID.strings import scan_request_string, reject_string, check_ban_string
 
-from telethon import events, custom
+from telethon import events, custom, Buttons
 
 import re
 import asyncio
@@ -27,7 +27,21 @@ def can_ban(event):
 
 @System.bot.on(events.NewMessage(pattern="[/!?]start"))
 async def sup(event):
-    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)")
+    await event.reply("ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)"),
+    Buttons = [
+    [
+        InlineKeyboardButton(
+            text="Aᴅᴅ ME Tᴏ Yᴏᴜʀ GC",
+            url="https://t.me/Yor_forger_spyxfamily_bot?startgroup=new",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="🔐 Help", callback_data="help_.") 
+    ],
+    [
+        InlineKeyboardButton(text="Support", url="https://t.me/komisansupport"),
+    ],
+]
 
 
 @System.bot.on(events.NewMessage(pattern="[/!?]vhelp"))
