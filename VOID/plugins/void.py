@@ -1,4 +1,4 @@
-from horisan import dispatcher
+from VOID import dispatcher
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
 
 from telegram.ext import (
@@ -36,6 +36,6 @@ dispatcher.add_handler(void_handler)
 help_plus = """
  ──「Void Network」──                         
  
-❂ /void: Get information about our community! using it in groups may create promotion so we don't support using it in groups."""
+❂ void: Get information about our community! using it in groups may create promotion so we don't support using it in groups."""
    
 __plugin_name__ = "【ᴠᴏɪᴅ】"
