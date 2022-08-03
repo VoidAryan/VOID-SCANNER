@@ -37,7 +37,7 @@ async def image_maker(event) -> None:
         force_document = False
     await System.send_message(
         event.chat_id,
-        "❂ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴜꜱᴇʀ'ꜱ ɪɴғᴋ...",
+        "❂ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴜꜱᴇʀ'ꜱ ɪɴғᴏ...",
         reply_to=event.message.id,
         file="user_id.png",
         force_document=force_document,
