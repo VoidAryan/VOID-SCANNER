@@ -1,5 +1,6 @@
 help_plus = """
 🔰 ʙᴀɴᴄᴏᴅᴇꜱ ᴏғ ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ :-
+
 ۞ `{Vx01}` - SCAMMER
 ۞ `{Vx02}` - COMMUNITY HATE.
 ۞ `{Vx03}` - ABUSE SPAM.
@@ -9,8 +10,8 @@ help_plus = """
 ۞ `{Vx07}` - ADDING SPAMBOTS.
 ۞ `{Vx08}` - ILLEGAL.
 ۞ `{Vx09}` - PHISHING.
-۞ `{Vx10}\ - FRAUD PROMOTION  [ANY KIND].
-۞ `{Vx11}` - CYBER THREATENING / CYBER BULLY.
+۞ `{Vx10}` - FRAUD PROMOTIO.
+۞ `{Vx11}` - CYBER THREATENING / BULLY.
 ۞ `{Vx12}` - CHILD ABUSE.
 ۞ `{Vx13}` - BAN EVASION.
 ۞ `{Vx14}` - SPAMBOT.
@@ -18,9 +19,9 @@ help_plus = """
 ۞ `{Vx16}` - RAID PARTICIPANT.
 ۞ `{Vx17}` - KRIMINALANT.
 ۞ `{Vx18}` - RAID/SPAM INFLAMMER.
-۞ `{Vx-20}` - RAID // SCAMMER BAN BY SCANNER BOT'S REPORTS
+۞ `{Vx20}` - HATE AGAINST COMMUNITY
 
-ʙʏ @VoidxNetwork
+BY : @VoidxNetwork
 """
 
 __plugin_name__ = "Bancodes"
