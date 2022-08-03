@@ -3,6 +3,8 @@ from VOID.strings import scan_request_string, reject_string, check_ban_string
 
 from telethon import events, custom, Button
 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+
 import re
 import asyncio
 
