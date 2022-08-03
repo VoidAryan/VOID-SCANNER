@@ -44,7 +44,8 @@ async def sup(event):
     [
         InlineKeyboardButton(text="Support", url="https://t.me/komisansupport"),
     ],
-]
+],
+                      )
                      
 
 
