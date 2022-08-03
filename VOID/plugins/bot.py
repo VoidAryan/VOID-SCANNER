@@ -31,7 +31,7 @@ async def sup(event):
     await event.reply("""
     ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)
     """,
-    Buttons = [
+    buttons = [
     [
         InlineKeyboardButton(
             text="Aᴅᴅ ME Tᴏ Yᴏᴜʀ GC",
