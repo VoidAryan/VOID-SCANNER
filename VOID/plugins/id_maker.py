@@ -24,7 +24,7 @@ async def image_maker(event) -> None:
     font2 = ImageFont.truetype("font2.ttf", size=100)
     # put text in image
     draw.text(
-        (1300, 350),
+        (1200, 360),
         replied_user.sender.first_name.replace("\u2060", ""),
         fill=color,
         font=font2,
