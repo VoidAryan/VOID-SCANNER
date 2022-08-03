@@ -1,4 +1,5 @@
 telethon
+telegram
 apiClient
 aiohttp 
 heroku3
