@@ -1,5 +1,7 @@
 telethon
-telegram
+python-telegram-bot==13.13
+TgCrypto
+telegraph
 apiClient
 aiohttp 
 heroku3
