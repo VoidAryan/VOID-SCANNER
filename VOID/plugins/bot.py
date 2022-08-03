@@ -1,9 +1,8 @@
 from VOID import System, session
 from VOID.strings import scan_request_string, reject_string, check_ban_string
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
 
 from telethon import events, custom, Button
-
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 import re
 import asyncio
@@ -32,7 +31,8 @@ async def sup(event):
     await event.reply("""
     ɪ ᴀᴍ ʀᴇᴀᴅʏ ᴛᴏ ꜱᴇɴᴅ ᴘᴜɴᴋꜱ ɪɴ ɪɴꜰɪɴɪᴛᴇ ᴠᴏɪᴅ [🤞](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg)
     """),
-buttons = [
+    
+Buttons = [
     [
         InlineKeyboardButton(
             text="Aᴅᴅ ME Tᴏ Yᴏᴜʀ GC",
@@ -40,7 +40,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🔐 Help", callback_data="help_.") 
+        InlineKeyboardButton(text="🔐 Help", url="t.me/voidxnetwork") 
     ],
     [
         InlineKeyboardButton(text="Support", url="https://t.me/komisansupport"),
