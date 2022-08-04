@@ -29,15 +29,18 @@ def can_ban(event):
 async def sup(event):
     buttons = [
 [Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
-[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
+[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/voidsystem')]
 
 ]
     await event.reply("""
-ʜᴇʏ,
+[👋](https://telegra.ph/file/0a69be5ac581fab0c9ac0.jpg) ʜᴇʏ,
 
 ❂ ɪᴍ 【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ @VoidxNetwork
 
 ❂ ᴛʜɪꜱ ꜱᴄᴀɴɴᴇʀ ɪꜱ ᴛᴏ ᴋᴇᴇᴘ ᴜꜱ ꜱᴀғᴇ ғʀᴏᴍ ᴛᴏxɪᴄɪᴛʏ ᴏᴠᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ʙʏ ɢʙᴀɴɴɪɴɢ ᴛᴏxɪᴄ ᴜꜱᴇʀ ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ
+━━━━━━━━━━━━━━━
+[Support](t.me/voidxbots) || [Scans](t.me/voidxgbans)
+━━━━━━━━━━━━━━━
     """, buttons=buttons)
                      
 
