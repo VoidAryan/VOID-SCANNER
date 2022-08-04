@@ -112,7 +112,9 @@ async def main():
 [Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
 
 ]
-        await event.reply(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)", buttons=buttons)
+        await System.send_message(Sibyl_logs, """
+        Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)
+        """, buttons=buttons)
     await System.run_until_disconnected()
 
 
