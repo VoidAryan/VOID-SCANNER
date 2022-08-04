@@ -49,20 +49,12 @@ async def sup(event):
 async def sup(event):
     buttons = [
 [Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
-[Button.url ('ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ' , 'https://t.me/voidsystem')]
 
 ]
     await event.reply("""
-[👋](https://telegra.ph/file/0a69be5ac581fab0c9ac0.jpg) ʜᴇʏ,
-───────────────────────
-❂ ɪᴍ ᴠᴏɪᴅ Sʏꜱᴛᴇᴍ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ [【V๏ɪ፝֟𝔡】Network](t.me/voidxnetwork)
+Welcome [✨](https://telegra.ph/file/fe148f3e62dea625f98c7.jpg) to [【V๏ɪ፝֟𝔡】 ✧Network✧ ](t.me/voidxnetwork)
 
-❂ ᴛʜɪꜱ ꜱᴄᴀɴɴᴇʀ ɪꜱ ᴛᴏ ᴋᴇᴇᴘ ᴜꜱ ꜱᴀғᴇ ғʀᴏᴍ ᴛᴏxɪᴄɪᴛʏ ᴏᴠᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ʙʏ ɢʙᴀɴɴɪɴɢ ᴛᴏxɪᴄ ᴜꜱᴇʀ ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ
-───────────────────────
-
-━━━━━━━━━━━━━━━
-[ꜱᴜᴘᴘᴏʀᴛ](t.me/voidxbots) || [ꜱᴄᴀɴꜱ](t.me/voidxgbans)
-━━━━━━━━━━━━━━━
+◈ Void is an anime based Community with a motive to spread love and peace around telegram. Go through the channel and join the Community if it draws your attention. ◈
     """, buttons=buttons)
 
 @System.bot.on(events.NewMessage(pattern="[/!?]help"))
