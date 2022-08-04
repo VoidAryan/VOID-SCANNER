@@ -107,10 +107,12 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        buttons = [
-[Button.url('SYSTEM', 'https://t.me/voidsystem')]
-            ]
-        await System.send_message(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)", buttons=buttons)
+    buttons = [
+[Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
+[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
+
+]
+        await event.reply(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)", buttons=buttons)
     await System.run_until_disconnected()
 
 
