@@ -5,7 +5,7 @@ to_load = [
     "safe",
     "eval",
     "id_maker",
-    "void',
+    "void",
     "shell",
     "bot",
     "bancodes",
