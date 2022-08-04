@@ -12,12 +12,13 @@ on_string = """
 scan_request_string = """
 #SCAN
 ɴᴇᴡ ꜱᴄᴀɴ ʀᴇϙᴜᴇꜱᴛ!
-
+━━━━━━━━━━━━━━━
 ۞ ʙʏ : {enforcer}
 ۞ ᴛᴏ : {spammer}
 ۞ ʀᴇᴀꜱᴏɴ : `{reason}`
 ۞ ғʀᴏᴍ : {chat}
-۞ ᴍᴇꜱꜱᴀɢᴇ : `{message}`
+۞ ᴍᴇꜱꜱᴀɢᴇ : {message}
+━━━━━━━━━━━━━━━
 """
 proof_string = """
 **Case file for** - {proof_id} :
