@@ -44,19 +44,19 @@ for load in to_load:
 @System.on(system_cmd(pattern=r"vinfo", allow_enforcer=True))
 async def status(event):
     msg = await event.reply("۞ ꜱᴇᴀʀᴄʜɪɴɢ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ....")
-    time.sleep(1)
+    time.sleep(2)
     await msg.edit("🤔")
     time.sleep(2)
-    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔸🔸🔸")
+    await msg.edit("ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ  🔹🔸🔸🔸")
     time.sleep(1)
-    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔸🔸")
+    await msg.edit("ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ  🔹🔹🔸🔸")
     time.sleep(1)
-    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔸")
+    await msg.edit("ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔸")
     time.sleep(1)
-    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔹")
+    await msg.edit("ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔹")
     time.sleep(1)
     await msg.edit("۞ ғᴏᴜɴᴅ ʏᴏᴜ ɪɴ ꜱʏꜱᴛᴇᴍ...!")
-    time.sleep(1)
+    time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
     time.sleep(1)
@@ -82,7 +82,7 @@ async def send_help(event):
     try:
         help_for = event.text.split(" ", 1)[1].lower()
     except IndexError:
-        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ V๏ɪ፝֟𝔡 • sʏsᴛᴇᴍ :\n\n"
+        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ :\n\n"
         for x in HELP.keys():
             msg += f"۞ `{x.capitalize()}`\n"
         await event.reply(msg)
@@ -110,8 +110,8 @@ async def main():
         await System.send_message(Sibyl_logs, """
 ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ [❗](https://telegra.ph/file/90feab5c586c12497347c.jpg)
 ━━━━━━━━━━━━━━━
-۞ ɪɴꜱᴘᴇᴄᴛᴏʀꜱ : {len(INSPECTORS)}
-۞ ᴇɴғᴏʀᴄᴇʀꜱ : {len(ENFORCERS)}
+۞ [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem)
+۞ [ᴠᴏɪᴅ ɴᴇᴛᴡᴏʀᴋ](t.me/voidxnetwork)
 ━━━━━━━━━━━━━━━
 ʙᴏᴛ ʙᴜɪʟᴅ ɪɴ ᴛᴇʟᴇᴛʜᴏɴ.
     
