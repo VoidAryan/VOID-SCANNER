@@ -29,12 +29,15 @@ proof_string = """
 
 
 forced_scan_string = """
-$FORCED @voidaryan
-**Inspector:** {ins}
-**Target:** {spammer}
-**Reason:** `{reason}`
-**Scan Source:** {chat}
-**Target Message:** `{message}`
+#FORCED
+ғᴏʀᴄᴇ ꜱᴄᴀɴɴᴇᴅ !
+━━━━━━━━━━━━━━━
+۞ ʙʏ : {ins}
+۞ ɢɪᴠᴇɴ ᴛᴏ : {spammer}
+۞ ʀᴇᴀꜱᴏɴ : `{reason}`
+۞ ғʀᴏᴍ : {chat}
+۞ ᴍᴇꜱꜱᴀɢᴇ : {message}
+━━━━━━━━━━━━━━━
 """
 
 group_admin_scan_string = """
