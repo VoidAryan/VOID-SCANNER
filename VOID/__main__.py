@@ -43,19 +43,19 @@ for load in to_load:
 
 @System.on(system_cmd(pattern=r"vinfo", allow_enforcer=True))
 async def status(event):
-    msg = await event.reply("Initialising User's Data....")
+    msg = await event.reply("۞ ꜱᴇᴀʀᴄʜɪɴɢ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ....")
     time.sleep(1)
     await msg.edit("🤔")
     time.sleep(2)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔸�🔸")
+    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔸🔸🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸")
+    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔸🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔹🔸")
+    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹")
+    await msg.edit("V๏ɪ፝֟𝔡 • ꜱʏꜱᴛᴇᴍ  🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("You Are Verified Under【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ...")
+    await msg.edit("۞ ғᴏᴜɴᴅ ʏᴏᴜ ɪɴ ꜱʏꜱᴛᴇᴍ...!")
     time.sleep(1)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -65,15 +65,15 @@ async def status(event):
 
 @System.on(system_cmd(pattern="vstats"))
 async def stats(event):
-    msg = f"Processed {System.processed} messages since last restart."
-    msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"
+    msg = f"❂ ᴍᴇꜱꜱᴀɢᴇꜱ ᴘʀᴏᴄᴇꜱꜱᴇᴅ : {System.processed}"
+    msg += f"\n\n{len(ENFORCERS)} ᴇɴғᴏʀᴄᴇʀꜱ & {len(INSPECTORS)} ɪɴꜱᴘᴇᴄᴛᴏʀꜱ"
     g = 0
     async for d in event.client.iter_dialogs(limit=None):
         if d.is_channel and not d.entity.broadcast:
             g += 1
         elif d.is_group:
             g += 1
-    msg += f"\nModerating {g} Groups"
+    msg += f"\n\n❂ ᴄᴏɴᴛʀᴏʟʟɪɴɢ : {g} ᴄʜᴀᴛs"
     await event.reply(msg)
 
 
@@ -82,7 +82,7 @@ async def send_help(event):
     try:
         help_for = event.text.split(" ", 1)[1].lower()
     except IndexError:
-        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ 【V๏ɪ፝֟𝔡】 • ꜱᴄᴀɴɴᴇʀ :\n\n"
+        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ V๏ɪ፝֟𝔡 • sʏsᴛᴇᴍ :\n\n"
         for x in HELP.keys():
             msg += f"۞ `{x.capitalize()}`\n"
         await event.reply(msg)
@@ -107,14 +107,15 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        buttons = [
-[Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
-[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
-
-]
         await System.send_message(Sibyl_logs, """
-        Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)
-        """, buttons=buttons)
+ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ [❗](https://telegra.ph/file/90feab5c586c12497347c.jpg)
+━━━━━━━━━━━━━━━
+۞ ɪɴꜱᴘᴇᴄᴛᴏʀꜱ : {INSPECTORS}
+۞ ᴇɴғᴏʀᴄᴇʀꜱ : {ENFORCERS}
+━━━━━━━━━━━━━━━
+ʙᴏᴛ ʙᴜɪʟᴅ ɪɴ ᴛᴇʟᴇᴛʜᴏɴ.
+    
+""")
     await System.run_until_disconnected()
 
 
