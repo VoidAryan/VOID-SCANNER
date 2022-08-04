@@ -7,7 +7,7 @@ from VOID import (
     Sibyl_logs,
 )
 from VOID.strings import on_string
-from telethon import Button
+from telethon import events, Button
 import logging
 import importlib
 import asyncio
