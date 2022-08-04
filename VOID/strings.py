@@ -1,22 +1,23 @@
 on_string = """
-🔰 V๏ɪ፝֟𝔡 SᴄᴀɴɴᴇƦ 🔰
-•──────✗───────•
+「 ᴠᴏɪᴅ ꜱᴄᴀɴɴᴇʀ 」
+━━━━━━━━━━━━━━━
 ۞ ʀᴀɴᴋ : {Enforcer}
 ۞ ɴᴀᴍᴇ : {name}
-•──────✗───────•
-ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ
+━━━━━━━━━━━━━━━
+「 ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ ! 」
 """
 
 # Make sure not to change these too much
 # If you still wanna change it change the regex too
 scan_request_string = """
-$SCAN @voidaryan 
-Cymatic Scan Request!
-**Enforcer:** {enforcer}
-**User scanned:** {spammer}
-**Reason:** `{reason}`
-**Scan Source:** {chat}
-**Target Message:** `{message}`
+#SCAN
+ɴᴇᴡ ꜱᴄᴀɴ ʀᴇϙᴜᴇꜱᴛ!
+
+۞ ʙʏ : {enforcer}
+۞ ᴛᴏ : {spammer}
+۞ ʀᴇᴀꜱᴏɴ : `{reason}`
+۞ ғʀᴏᴍ : {chat}
+۞ ᴍᴇꜱꜱᴀɢᴇ : `{message}`
 """
 proof_string = """
 **Case file for** - {proof_id} :
