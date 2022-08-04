@@ -28,7 +28,8 @@ def can_ban(event):
 @System.bot.on(events.NewMessage(pattern="[/!?]start"))
 async def sup(event):
     buttons = [
-[Button.url('Network', 'https://t.me/voidxnetwork')]
+[Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
+[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
 
 ]
     await event.reply("""
@@ -41,10 +42,13 @@ async def sup(event):
                      
 
 
-@System.bot.on(events.NewMessage(pattern="[/!?]vhelp"))
+@System.bot.on(events.NewMessage(pattern="[/!?]help"))
 async def help(event):
-    if not event.is_private:
-        return
+    buttons = [
+[Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
+[Button.url ('V๏ɪ፝֟𝔡 • SYSTEM' , 'https://t.me/void_system')]
+
+]
     await event.reply("""
 Add this bot to any group and It will warn/ban If any gbanned user joins [💢](https://telegra.ph/file/13ebc390cf430da0ac6dc.jpg).
 
@@ -58,7 +62,7 @@ Add this bot to any group and It will warn/ban If any gbanned user joins [💢](
     `ban` - Ban and send a message In the chat to say the user was banned.
     `warn` - Warn that a gbanned user has joined but do nothing.
 
-× All commands can be used with ! , / or ?""")
+× All commands can be used with ! , / or ?""", buttons=buttons)
 
 
 @System.bot.on(events.CallbackQuery(pattern=r"(approve|reject)_(\d*)"))
