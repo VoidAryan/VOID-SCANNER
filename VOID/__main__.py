@@ -7,6 +7,7 @@ from VOID import (
     Sibyl_logs,
 )
 from VOID.strings import on_string
+from telethon import Button
 import logging
 import importlib
 import asyncio
@@ -46,15 +47,15 @@ async def status(event):
     time.sleep(1)
     await msg.edit("🤔")
     time.sleep(2)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹 🔸 🔸 🔸")
+    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔸�🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹 🔹 🔸 🔸")
+    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔸🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹 🔹 🔹 🔸")
+    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔹🔸")
     time.sleep(1)
-    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹 🔹 🔹 🔹")
+    await msg.edit("【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ  🔹🔹🔹🔹")
     time.sleep(1)
-    await msg.edit("You Are Verified Under【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ")
+    await msg.edit("You Are Verified Under【V๏ɪ፝֟𝔡】• SᴄᴀɴɴᴇƦ...")
     time.sleep(1)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -62,7 +63,7 @@ async def status(event):
     await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
 
 
-@System.on(system_cmd(pattern="v stats"))
+@System.on(system_cmd(pattern="vstats"))
 async def stats(event):
     msg = f"Processed {System.processed} messages since last restart."
     msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"
@@ -81,7 +82,7 @@ async def send_help(event):
     try:
         help_for = event.text.split(" ", 1)[1].lower()
     except IndexError:
-        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ 【V๏ɪ፝֟𝔡】 • ꜱᴄᴀɴɴᴇʀ [💢](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) :\n\n"
+        msg = "ʟɪꜱᴛ ᴏꜰ ᴘʟᴜɢɪɴꜱ ɪɴ 【V๏ɪ፝֟𝔡】 • ꜱᴄᴀɴɴᴇʀ :\n\n"
         for x in HELP.keys():
             msg += f"۞ `{x.capitalize()}`\n"
         await event.reply(msg)
@@ -106,7 +107,11 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        await System.send_message(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)")
+        buttons = [
+[Button.url('SYSTEM', 'Https:://t.me/voidsystem)]
+
+]
+        await System.send_message(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)", buttons=buttons)
     await System.run_until_disconnected()
 
 
