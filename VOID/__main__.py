@@ -109,8 +109,7 @@ async def main():
     else:
         buttons = [
 [Button.url('SYSTEM', 'Https://t.me/voidsystem)]
-
-]
+            ]
         await System.send_message(Sibyl_logs, "Ready to send punks in infinite void [💢](https://telegra.ph/file/ae550aa7425e537dad42f.jpg)", buttons=buttons)
     await System.run_until_disconnected()
 
