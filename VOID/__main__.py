@@ -110,8 +110,8 @@ async def main():
         await System.send_message(Sibyl_logs, """
 ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ [❗](https://telegra.ph/file/90feab5c586c12497347c.jpg)
 ━━━━━━━━━━━━━━━
-۞ ɪɴꜱᴘᴇᴄᴛᴏʀꜱ : {INSPECTORS}
-۞ ᴇɴғᴏʀᴄᴇʀꜱ : {ENFORCERS}
+۞ ɪɴꜱᴘᴇᴄᴛᴏʀꜱ : {len(INSPECTORS)}
+۞ ᴇɴғᴏʀᴄᴇʀꜱ : {len(ENFORCERS)}
 ━━━━━━━━━━━━━━━
 ʙᴏᴛ ʙᴜɪʟᴅ ɪɴ ᴛᴇʟᴇᴛʜᴏɴ.
     
