@@ -109,7 +109,7 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        System.send_file(Sibyl_logs, VOID_IMG, caption="""
+         await System.send_file(Sibyl_logs, VOID_IMG, caption="""
 ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ
 ━━━━━━━━━━━━━━━
 ۞ [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem)
