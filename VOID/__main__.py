@@ -62,7 +62,8 @@ async def status(event):
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
     time.sleep(1)
-    await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
+    await bot.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
+    await msg.delete()
 
 
 @System.on(system_cmd(pattern="vstats"))
