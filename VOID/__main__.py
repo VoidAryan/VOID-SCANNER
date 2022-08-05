@@ -13,6 +13,7 @@ import importlib
 import asyncio
 import time
 
+INFOPIC = "https://telegra.ph/file/95f9d0b2854218dc42a53.jpg"
 VOID_IMG = "https://telegra.ph/file/90feab5c586c12497347c.jpg"
 
 logging.basicConfig(
