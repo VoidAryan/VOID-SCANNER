@@ -22,4 +22,4 @@ help_plus = """
 BY : @VoidxNetwork
 """
 
-__plugin_name__ = "Test"
+__plugin_name__ = "void"
