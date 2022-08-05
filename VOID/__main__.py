@@ -44,7 +44,7 @@ for load in to_load:
         print("------------------------------------")
 
 
-@System.on(system_cmd(pattern=r"vinfo"))
+@System.on(system_cmd(pattern=r"vinfo",))
 async def status(event):
     msg = await event.reply("۞ ꜱᴇᴀʀᴄʜɪɴɢ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ....")
     time.sleep(2)
