@@ -10,9 +10,6 @@ async def whois(event):
         if event.reply:
             replied = await event.get_reply_message()
             to_get = int(replied.sender.id)
-        else:
-            return
-    try:
             to_get = int(to_get)
         else:
             return
