@@ -13,6 +13,8 @@ import importlib
 import asyncio
 import time
 
+VOID_IMG = "https://telegra.ph/file/90feab5c586c12497347c.jpg"
+
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING
 )
@@ -107,8 +109,8 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        await System.send_message(Sibyl_logs, """
-ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ [❗](https://telegra.ph/file/90feab5c586c12497347c.jpg)
+        System.upload_file(Sibyl_logs, VOID_IMG, caption="""
+ꜱʏꜱᴛᴇᴍ ʙᴇᴄᴀᴍᴇ ᴀᴄᴛɪᴠᴇ
 ━━━━━━━━━━━━━━━
 ۞ [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem)
 ۞ [ᴠᴏɪᴅ ɴᴇᴛᴡᴏʀᴋ](t.me/voidxnetwork)
