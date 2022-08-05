@@ -548,27 +548,25 @@ async def reject(event):
 
 
 help_plus = """
-[۞](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Here is the help for **Main**:
+۞ ᴜꜱᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
-Commands:
-    `scan` - Reply to a message WITH reason to send a request to Inspectors/Sibyl for judgement
-    `approve` - Approve a scan request (Only works in Sibyl System Base)
-    `revert` or `revive` or `restore` - Ungban ID
-    `qproof` - Get quick proof from database for given user id
-    `proof` - Get message from proof id which is at the end of gban msg
-    `reject` - Reject a scan request
+ᴛʜᴇꜱᴇ ᴀʀᴇ ꜱᴏᴍᴇ ᴍᴀɪɴ ʀᴜɴɴɪɴɢ ᴄᴏᴍᴍᴀɴᴅꜱ ɪɴ ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ. 
 
-Flags:
-    scan:
-        `-f` - Force approve a scan. Using this with scan will auto approve it (Inspectors+)
-        `-u` - Grab message from url. Use this with message link to scan the user the message link redirects to. (Enforcers+)
-        `-o` - Original Sender. Using this will gban orignal sender instead of forwarder (Enforcers+)
-    approve:
-        `-or` - Overwrite reason. Use this to change scan reason.
-    reject:
-        `-r` - Reply to the scan message with reject reason.
+━━━━━━━━━━━━━━━
+✫ ꜱᴄᴀɴ - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇϙᴜᴇꜱᴛ ꜱᴄᴀɴ ɪɴ ꜱʏꜱᴛᴇᴍ.
+━━━━━━━━━━━━━━━
+✫ ᴀᴘᴘʀᴏᴠᴇ - ᴀᴘᴘʀᴏᴠᴇꜱ ᴛʜᴇ ʀᴇϙᴜᴇꜱᴛᴇᴅ ꜱᴄᴀɴ. ᴏɴʟʏ ᴡᴏʀᴋꜱ ᴀᴛ ᴏᴜʀ ꜱʏꜱᴛᴇᴍ ꜱᴜᴘᴘᴏʀᴛ.
+━━━━━━━━━━━━━━━
+✫ ʀᴇᴠᴇʀᴛ - ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴀꜱ ʀᴇᴠᴇʀᴛ ᴏʀ ʀᴇᴠɪᴠᴇ ᴀꜱᴡᴇʟʟ. ғᴏʀ ᴜɴɢʙᴀɴɴɪɴɢ ᴛʜᴇ ꜱᴄᴀɴɴᴇᴅ ᴘᴇʀꜱᴏɴ.
+━━━━━━━━━━━━━━━
+✫ ϙᴘʀᴏᴏғ - ϙᴜɪᴄᴋ ᴘʀᴏᴏғ ғʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ ᴏғ ꜱᴄᴀɴɴᴇᴅ ᴘᴇʀꜱᴏɴ'ꜱ ɪ'ᴅ.
+━━━━━━━━━━━━━━━
+✫ ᴘʀᴏᴏғ - ɢᴇᴛ ᴘʀᴏᴏғ ɪ'ᴅ.
+━━━━━━━━━━━━━━━
+✫ ʀᴇᴊᴇᴄᴛ - ᴛᴏ ʀᴇᴊᴇᴄᴛ ᴛʜᴇ ʀᴇϙᴜᴇꜱᴛᴇᴅ ꜱᴄᴀɴ ʙʏ ᴇɴғ ᴏʀ ɪɴꜱ.
+━━━━━━━━━━━━━━━
 
-All commands can be used with ! or / or ? or .
+۞ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴡɪᴛʜ ( / , ! , ? , . )
 """
 
-__plugin_name__ = "Main"
+__plugin_name__ = "Gui"
