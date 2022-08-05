@@ -53,7 +53,7 @@ async def status(event):
     await msg.edit("۞ ғᴏᴜɴᴅ ʏᴏᴜ ɪɴ ꜱʏꜱᴛᴇᴍ...!")
     time.sleep(2)
     sender = await event.get_sender()
-    user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
+    user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer" else "Member"
     time.sleep(1)
     await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()
