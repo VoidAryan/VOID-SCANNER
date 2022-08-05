@@ -53,9 +53,9 @@ async def status(event):
     await msg.edit("۞ ғᴏᴜɴᴅ ʏᴏᴜ ɪɴ ꜱʏꜱᴛᴇᴍ...!")
     time.sleep(2)
     sender = await event.get_sender()
-    user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer" if sender.id in ENFORCERS else 'Normal User'
+    user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
     time.sleep(1)
-    if user_status == 'Normal User':
+    if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
         await event.reply(on_string.format(Enforcer=user_status, name=sender.first_name))
     else:
         await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
