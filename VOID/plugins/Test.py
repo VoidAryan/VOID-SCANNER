@@ -18,9 +18,6 @@ async def whois(event):
         pass
     try:
         data = await System(GetFullUserRequest(to_get))
-    except Exception:
-        await event.reply("Failed to get data of the user")
-        return
     await System.send_message(
         event.chat_id,
         f"Perma Link: [{data.user.first_name}](tg://user?id={data.user.id})\nUser ID: `{data.user.id}`\nAbout: {data.about}",
@@ -33,4 +30,4 @@ help_plus = """ [۞](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Here is 
 `/` `?` `.` `!` are supported prefixes.\n
 **Example:** `/addenf` or `?addenf` or `.addenf`
 """
-__plugin_name__ = "whois"
+__plugin_name__ = "Test"
