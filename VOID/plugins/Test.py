@@ -13,9 +13,10 @@ async def whois(event):
         else:
             return
     try:
-        to_get = int(to_get)
-    except Exception:
-        pass
+            to_get = int(to_get)
+        else:
+            return
+
     try:
         data = await System(GetFullUserRequest(to_get))
     await System.send_message(
