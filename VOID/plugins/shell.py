@@ -3,7 +3,7 @@ import asyncio
 import io
 
 
-@System.on(system_cmd("(term|terminal|shell) "))
+@System.on(system_cmd("(term|void|shell) "))
 async def shell(event):
     if event.fwd_from:
         return
@@ -18,9 +18,9 @@ async def shell(event):
     stdout, stderr = await async_process.communicate()
     msg = ""
     if stderr.decode():
-        msg += f"**Stderr:**\n`{stderr.decode()}`"
+        msg += f"**Stderr:**\n{stderr.decode()}"
     if stdout.decode():
-        msg += f"**Stdout:**\n`{stdout.decode()}`"
+        msg += f"**Stdout:**\n{stdout.decode()}"
     if len(msg) > 4096:
         with io.BytesIO(msg) as file:
             file.name = "shell.txt"
@@ -35,10 +35,10 @@ async def shell(event):
     await event.reply(msg)
 
 
-__plugin_name__ = "shell"
+__plugin_name__ = "echo"
 
 help_plus = """
-[۞](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Cmd - sh or shell or term or terminal\n
-Example - `?sh echo owo`
-Output - owo
+× Cmd - sh or shell or term or terminal\n\n
+Example - `?void echo VOID`
+Output - VOID
 """
