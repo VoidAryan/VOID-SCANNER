@@ -47,14 +47,8 @@ for load in to_load:
 @System.on(events.NewMessage(pattern=r"[/|\.|\?|!]vinfo"))
 async def status(event):
     msg = await event.reply("۞ ꜱᴇᴀʀᴄʜɪɴɢ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ....")
-    time.sleep(2)
-    await msg.edit("🤔")
-    time.sleep(2)
-    await msg.edit("۞ ғᴏᴜɴᴅ ʏᴏᴜ ɪɴ ꜱʏꜱᴛᴇᴍ...!")
-    time.sleep(2)
     sender = await event.get_sender()
     user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
-    time.sleep(1)
     if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
         await event.reply(on_string.format(Enforcer=user_status, name=sender.first_name))
     else:
