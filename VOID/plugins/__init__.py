@@ -6,7 +6,7 @@ to_load = [
     "eval",
     "id_maker",
     "void",
-    "Test",
+    "whois",
     "shell",
     "bot",
     "bancodes",
