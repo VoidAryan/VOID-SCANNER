@@ -4,6 +4,7 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from VOID import System, system_cmd
+from PIL import Image, ImageDraw, ImageFont
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 
