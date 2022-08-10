@@ -20,10 +20,8 @@ async def who(event):
     replied_user = await get_user(event)
     caption = await fetch_info(replied_user, event)
     message_id_to_reply = event.message.reply_to_msg_id
-    replied_user_profile_photos = await System(
-        GetUserPhotosRequest(
-            user_id=replied_user.user.id, offset=42, max_id=0, limit=80
-        )
+    await System.download_profile_photo(
+        replied_user.from_id.user_id, file="user.png", download_big=True
     )
 
     user_photo = Image.open("user.png")
