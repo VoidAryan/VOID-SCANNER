@@ -25,6 +25,32 @@ async def who(event):
         )
     )
 
+    user_photo = Image.open("user.png")
+    # open id photo
+    id_template = Image.open("GIT.png")
+    # resize user photo to fit box in id template
+    user_photo = user_photo.resize((950, 1000))
+    # put image in position
+    id_template.paste(user_photo, (820, 530))
+    # postion on where to draw text
+    draw = ImageDraw.Draw(id_template)
+    color = "rgb(0, 0, 0)"  # black
+    font = ImageFont.truetype("font.ttf", size=80)
+    font2 = ImageFont.truetype("font2.ttf", size=100)
+    # put text in image
+    draw.text(
+        (1150, 360),
+        replied_user.sender.first_name.replace("\u2060", ""),
+        fill=color,
+        font=font2,
+    )
+    draw.text((300, 35), str(replied_user.from_id.user_id), fill=color, font=font)
+    id_template.save("user_id.png")
+    if "doc" in event.text:
+        force_document = True
+    else:
+        force_document = False
+
     if not message_id_to_reply:
         message_id_to_reply = None
 
@@ -38,6 +64,10 @@ async def who(event):
         silent=True,
     )
     await event.delete()
+    try:
+        os.remove("user_id.png")
+    except:
+        pass
 
 
 async def get_user(event):
