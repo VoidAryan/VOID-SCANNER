@@ -3,7 +3,7 @@ import os
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-from Sibyl_System import System, system_cmd
+from VOID import System, system_cmd
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 
