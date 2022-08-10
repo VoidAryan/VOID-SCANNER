@@ -18,6 +18,7 @@ async def who(event):
         os.makedirs(TMP_DOWNLOAD_DIRECTORY)
 
     replied_user = await get_user(event)
+    await event.reply(str(replied_user))
     caption = await fetch_info(replied_user, event)
     message_id_to_reply = event.message.reply_to_msg_id
     await System.download_profile_photo(
