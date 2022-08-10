@@ -131,10 +131,13 @@ async def fetch_info(replied_user, event):
 
     return caption
     
-help_plus = """۞ Here is Help for INFO -\n
-`info` - get data of the user\n\n
-Notes:
-`/` `?` `.` `!` are supported prefixes.\n\n
-Example: `/addenf` or `?addenf` or `.addenf`
+help_plus = """ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ғᴏʀ INFO :
+
+۞ `info` - ɢᴇᴛ ʙʀɪᴇғ ᴅᴀᴛᴀ ᴏғ ʀᴇᴘʟɪᴇᴅ ᴜꜱᴇʀ
+
+ɴᴏᴛᴇ !
+
+۞ ʏᴏᴜ ᴄᴀɴ ɢɪᴠᴇ ᴀᴄᴄᴇꜱꜱ ʙʏ :
+× `addenf` ᴏʀ `addins`
 """
 __plugin_name__ = "info"
