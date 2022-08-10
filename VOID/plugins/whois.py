@@ -115,7 +115,7 @@ async def fetch_info(replied_user, event):
         common_chat = "I've seen them in... Wow. Are they stalking me? "
         common_chat += "They're in all the same places I am... oh. It's me."
 
-    caption =UsᴇʀIɴғᴏᴅᴇᴛᴀɪʟᴇᴅ ɪɴғᴏ ᴏғ ᴜꜱᴇʀ :</b></u>\n\n"
+    caption = f"</b></u>ᴅᴇᴛᴀɪʟᴇᴅ ɪɴғᴏ ᴏғ ᴜꜱᴇʀ :</b></u>\n\n"
     caption += f"۞ <b>Fɪʀsᴛ Nᴀᴍᴇ</b>: <code>{first_name}</code> \n"
     caption += f"۞ <b>Lᴀsᴛ Nᴀᴍᴇ</b>: <code>{last_name}</code> \n"
     caption += f"۞ <b>UsᴇʀNᴀᴍᴇ</b>: <code>{username}</code> \n"
