@@ -130,3 +130,11 @@ async def fetch_info(replied_user, event):
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
 
     return caption
+    
+    help_plus = """۞ Here is Help for INFO -\n
+`info` - get data of the user\n\n
+Notes:
+`/` `?` `.` `!` are supported prefixes.\n\n
+Example: `/addenf` or `?addenf` or `.addenf`
+"""
+__plugin_name__ = "info"
