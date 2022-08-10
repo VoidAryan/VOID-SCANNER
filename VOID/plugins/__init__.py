@@ -7,6 +7,7 @@ to_load = [
     "id_maker",
     "void",
     "info",
+    "scan",
     "shell",
     "bot",
     "bancodes",
