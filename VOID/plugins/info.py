@@ -131,7 +131,7 @@ async def fetch_info(replied_user, event):
 
     return caption
     
-    help_plus = """۞ Here is Help for INFO -\n
+help_plus = """۞ Here is Help for INFO -\n
 `info` - get data of the user\n\n
 Notes:
 `/` `?` `.` `!` are supported prefixes.\n\n
