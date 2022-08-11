@@ -10,7 +10,7 @@ on_string = """
 # Make sure not to change these too much
 # If you still wanna change it change the regex too
 scan_request_string = """
-#SCAN
+$SCAN
 ɴᴇᴡ ꜱᴄᴀɴ ʀᴇϙᴜᴇꜱᴛ!
 ━━━━━━━━━━━━━━━
 ۞ ʙʏ : {enforcer}
@@ -29,7 +29,7 @@ proof_string = """
 
 
 forced_scan_string = """
-#FORCED
+$FORCED
 ғᴏʀᴄᴇ ꜱᴄᴀɴɴᴇᴅ !
 ━━━━━━━━━━━━━━━
 ۞ ʙʏ : {ins}
