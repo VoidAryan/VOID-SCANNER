@@ -30,7 +30,7 @@ async def who(event):
     # resize user photo to fit box in id template
     user_photo = user_photo.resize((1100, 1100))
     # put image in position
-    id_template.paste(user_photo, (, 1200))
+    id_template.paste(user_photo, (930, 1200))
     # postion on where to draw text
     draw = ImageDraw.Draw(id_template)
     color = "rgb(0, 0, 0)"  # black
