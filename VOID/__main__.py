@@ -106,7 +106,7 @@ async def main():
 ۞ [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem)
 ۞ [ᴠᴏɪᴅ ɴᴇᴛᴡᴏʀᴋ](t.me/voidxnetwork)
 ━━━━━━━━━━━━━━━
-ʙᴏᴛ ʙᴜɪʟᴅ ɪɴ ᴛᴇʟᴇᴛʜᴏɴ.
+ʙᴏᴛ ʙᴜɪʟᴛ ɪɴ ᴛᴇʟᴇᴛʜᴏɴ.
     
 """)
     await System.run_until_disconnected()
