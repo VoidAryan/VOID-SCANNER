@@ -43,7 +43,7 @@ async def who(event):
         fill=color,
         font=font2,
     )
-    draw.text((300, 35), str(replied_user.user.user_id), fill=color, font=font)
+    draw.text((300, 35), str(replied_user.user.id), fill=color, font=font)
     id_template.save("user_id.png")
     if "doc" in event.text:
         force_document = True
