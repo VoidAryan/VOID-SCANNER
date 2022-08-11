@@ -39,11 +39,11 @@ async def who(event):
     # put text in image
     draw.text(
         (1150, 360),
-        replied_user.first_name.replace("\u2060", ""),
+        replied_user.user.first_name.replace("\u2060", ""),
         fill=color,
         font=font2,
     )
-    draw.text((300, 35), str(replied_user.user_id), fill=color, font=font)
+    draw.text((300, 35), str(replied_user.user.user_id), fill=color, font=font)
     id_template.save("user_id.png")
     if "doc" in event.text:
         force_document = True
