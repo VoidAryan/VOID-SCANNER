@@ -11,14 +11,14 @@ on_string = """
 # If you still wanna change it change the regex too
 scan_request_string = """
 $SCAN
-ɴᴇᴡ ꜱᴄᴀɴ ʀᴇϙᴜᴇꜱᴛ!
+Cymatic Scan Request!
 ━━━━━━━━━━━━━━━
-۞ ʙʏ : {enforcer}
-۞ ᴛᴏ : {spammer}
-۞ ʀᴇᴀꜱᴏɴ : `{reason}`
-۞ ғʀᴏᴍ : {chat}
-۞ ᴍᴇꜱꜱᴀɢᴇ : {message}
+**Enforcer:** {enforcer}
+**User scanned:** {spammer}
+**Reason:** `{reason}`
+**Scan Source:** {chat}
 ━━━━━━━━━━━━━━━
+**Target Message:** `{message}`
 """
 proof_string = """
 **Case file for** - {proof_id} :
