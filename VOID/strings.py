@@ -11,12 +11,12 @@ on_string = """
 # If you still wanna change it change the regex too
 scan_request_string = """
 $SCAN
-Cymatic Scan Request!
+New Scan Request!
 ━━━━━━━━━━━━━━━
-**Enforcer:** {enforcer}
-**User scanned:** {spammer}
-**Reason:** `{reason}`
-**Scan Source:** {chat}
+۞ **Enforcer:** {enforcer}
+۞ **User scanned:** {spammer}
+۞ **Reason:** `{reason}`
+۞ **Scan Source:** {chat}
 ━━━━━━━━━━━━━━━
 **Target Message:** `{message}`
 """
