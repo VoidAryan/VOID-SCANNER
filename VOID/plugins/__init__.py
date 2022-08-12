@@ -4,7 +4,6 @@ to_load = [
     "extras",
     "safe",
     "eval",
-    "id_maker",
     "void",
     "info",
     "scan",
