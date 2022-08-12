@@ -1,4 +1,4 @@
-from VOID import Sibyl_logs, ENFORCERS, SIBYL, INSPECTORS
+from VOID import Sibyl_logs, GBAN_MSG_LOGS, ENFORCERS, SIBYL, INSPECTORS
 from VOID.strings import (
     scan_request_string,
     reject_string,
