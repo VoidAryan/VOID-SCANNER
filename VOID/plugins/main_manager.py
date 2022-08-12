@@ -142,7 +142,7 @@ async def scan(event, flags):
         if message.from_id.user_id in ENFORCERS:
             return
         if message.media:
-            await replied.forward_to(Sibyl_logs)
+            await replied.forward_to(GBAN_MSG_LOGS)
         if flags.f and executer.id in INSPECTORS:
             msg = await System.send_message(
                 Sibyl_logs,
