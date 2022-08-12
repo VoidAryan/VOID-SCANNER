@@ -147,15 +147,13 @@ async def fetch_info(replied_user, event):
     caption = f"</b></u>ᴅᴇᴛᴀɪʟᴇᴅ ɪɴғᴏ ᴏғ ᴜꜱᴇʀ :</b></u>\n\n"
     caption += f"۞ <b>Fɪʀsᴛ Nᴀᴍᴇ</b>: <code>{first_name}</code> \n"
     caption += f"۞ <b>Lᴀsᴛ Nᴀᴍᴇ</b>: <code>{last_name}</code> \n"
-    caption += f"۞ <b>UsᴇʀNᴀᴍᴇ</b>: <code>{username}</code> \n"
-    caption += f"۞ <b>Is Bᴏᴛ</b>: <code>{is_bot}</code> \n"
+    caption += f"۞ <b>UsᴇʀNᴀᴍᴇ</b>: {username}\n"
     caption += f"۞ <b>Is Rᴇsᴛʀɪᴄᴛᴇᴅ</b>: <code>{restricted}</code> \n"
-    caption += f"۞ <b>Is Vᴇʀɪғɪᴇᴅ ʙʏ Tᴇʟᴇɢʀᴀᴍ</b>: <code>{verified}</code> \n"
-    caption += f"۞ <b>ID</b>: <code>{user_id}</code> \n"
-    caption += f"۞ <b>Bɪᴏ</b>: <code>{user_bio}</code> \n\n"
-    caption += f"❁ <b>Nᴜᴍʙᴇʀ ᴏғ Pʀᴏғɪʟᴇ Pɪᴄs</b>: <code>{replied_user_profile_photos_count}</code> \n"
-    caption += f"\n❁ <b>Cᴏᴍᴍᴏɴ Cʜᴀᴛs</b>: <code>{common_chat} </code>\n\n"
-    caption += f"❁ <b>Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ</b>: "
+    caption += f"۞ <b>ID</b>: <code>{user_id}</code> \n\n"
+    caption += f"× <b>Bɪᴏ</b>: {user_bio}\n"
+    caption += f"× <b>Nᴜᴍʙᴇʀ ᴏғ Pʀᴏғɪʟᴇ Pɪᴄs</b>: {replied_user_profile_photos_count}\n"
+    caption += f"× <b>Cᴏᴍᴍᴏɴ Cʜᴀᴛs</b>: <code>{common_chat} </code>\n\n"
+    caption += f"<b>Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ</b>: "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
 
     return caption
