@@ -26,7 +26,7 @@ class SibylClient(TelegramClient):
         """Declare stuff."""
         self.gban_logs = GBAN_MSG_LOGS
         self.approved_logs = Sibyl_approved_logs
-        self.log = Sibyl_logs
+        self.log = GBAN_MSG_LOGS
         self.bot = None
         self.processing = 0
         self.processed = 0
