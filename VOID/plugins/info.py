@@ -150,7 +150,6 @@ async def fetch_info(replied_user, event):
     caption += f"۞ <b>UsᴇʀNᴀᴍᴇ</b>: {username}\n"
     caption += f"۞ <b>Is Rᴇsᴛʀɪᴄᴛᴇᴅ</b>: <code>{restricted}</code> \n"
     caption += f"۞ <b>ID</b>: <code>{user_id}</code> \n\n"
-    caption += f"× <b>Bɪᴏ</b>: {user_bio}\n"
     caption += f"× <b>Nᴜᴍʙᴇʀ ᴏғ Pʀᴏғɪʟᴇ Pɪᴄs</b>: {replied_user_profile_photos_count}\n"
     caption += f"× <b>Cᴏᴍᴍᴏɴ Cʜᴀᴛs</b>: <code>{common_chat} </code>\n\n"
     caption += f"<b>Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ</b>: "
