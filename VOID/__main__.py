@@ -14,7 +14,8 @@ import asyncio
 import time
 
 INFOPIC = "https://telegra.ph/file/95f9d0b2854218dc42a53.jpg"
-VOID_IMG = "https://telegra.ph/file/90feab5c586c12497347c.jpg"
+VOID_IMG = "https://telegra.ph/file/720bbed1c8c67ae973cfa.jpg"
+SHTART_IMG = "https://telegra.ph/file/8da5a311bc80410bee59c.jpg"
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING
@@ -54,6 +55,17 @@ async def status(event):
     else:
         await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()
+    
+@System.on(events.NewMessage(pattern=r"[/|\.|\?|!]start"))
+async def status(event):
+    msg = await event.reply("ꜱᴛᴀʀᴛɪɴɢ ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ....")
+    sender = await event.get_sender()
+    user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
+    if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
+        await event.reply(shtart.format(Enforcer=user_status, name=sender.first_name))
+    else:
+        await System.send_file(event.chat_id, SHTART_IMG, caption=shtart.format(Enforcer=user_status, name=sender.first_name))
+    await msg.delete()    
 
 
 @System.on(system_cmd(pattern="vstats"))
