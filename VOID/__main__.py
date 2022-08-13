@@ -6,7 +6,7 @@ from VOID import (
     ENFORCERS,
     Sibyl_logs,
 )
-from VOID.strings import on_string
+from VOID.strings import on_string, shtart_string
 from telethon import events, custom, Button
 import logging
 import importlib
