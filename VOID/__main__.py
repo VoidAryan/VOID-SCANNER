@@ -52,7 +52,7 @@ async def status(event):
     sender = await event.get_sender()
     user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
     if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
-        await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
+        await System.send_file(event.chat_id, NINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     else:
         await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()
@@ -63,7 +63,7 @@ async def status(event):
     sender = await event.get_sender()
     user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
     if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
-        await System.send_file(event.chat_id, NINFO, caption=shtart_string.format(Enforcer=user_status, name=sender.first_name))
+        await System.send_file(event.chat_id, START_IMG, caption=shtart_string.format(Enforcer=user_status, name=sender.first_name))
     else:
         await System.send_file(event.chat_id, START_IMG, caption=shtart_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()    
