@@ -8,7 +8,7 @@ on_string = """
 """
 
 shtart_string = """
-start ho chuka hu dosto!
+ʜᴇʏ {name} ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀᴄᴛɪᴠᴇ....
 """
 
 # Make sure not to change these too much
