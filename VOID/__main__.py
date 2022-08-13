@@ -13,7 +13,7 @@ import importlib
 import asyncio
 import time
 
-INFOPIC = "https://telegra.ph/file/95f9d0b2854218dc42a53.jpg"
+INFOPIC = "https://telegra.ph/file/681141cec49df566b0fa9.jpg"
 VOID_IMG = "https://telegra.ph/file/720bbed1c8c67ae973cfa.jpg"
 START_IMG = "https://telegra.ph/file/8da5a311bc80410bee59c.jpg"
 NINFO = "https://telegra.ph/file/0d4386d2d18d0c0bbf027.jpg"
@@ -56,7 +56,7 @@ async def status(event):
         await System.send_file(event.chat_id, NINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     if user_status == 'ɪɴꜱᴘᴇᴄᴛᴏʀ':
         await System.send_file(event.chat_id, IINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
-    else:
+    if user_status == 'ᴇɴғᴏʀᴄᴇʀ':
         await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()
     
