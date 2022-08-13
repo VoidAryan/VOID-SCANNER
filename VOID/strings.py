@@ -7,6 +7,18 @@ on_string = """
 「 ꜱʏꜱᴛᴇᴍ ᴜᴘᴅᴀᴛᴇꜱ - [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem) 」
 """
 
+shtart = """
+ʜᴇʏ {ɴᴀᴍᴇ}
+ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀ ᴛᴇʟᴇᴛʜᴏɴ ʙᴀꜱᴇᴅ ꜱᴄᴀɴɴᴇʀ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - [ᴠᴏɪᴅ ɴᴇᴛᴡᴏʀᴋ](t.me/voidxnetwork).
+
+۞ ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴄᴜʟᴘʀɪᴛ ᴜꜱᴇʀs ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ.
+۞ ɪ ᴡᴀꜱ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ᴛᴏ ɢᴜᴀʀᴅ ᴍʏ ɴᴇᴛᴡᴏʀᴋ.
+
+━━━━━━━━━━━━━━━
+[ꜱᴜᴘᴘᴏʀᴛ](t.me/void_support) | [ꜱᴄᴀɴꜱ](t.me/voidscans)
+━━━━━━━━━━━━━━━
+"""
+
 # Make sure not to change these too much
 # If you still wanna change it change the regex too
 scan_request_string = """
