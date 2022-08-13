@@ -62,9 +62,9 @@ async def status(event):
     sender = await event.get_sender()
     user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
     if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
-        await event.reply(shtart.format(Enforcer=user_status, name=sender.first_name))
+        await event.reply(shtart_string.format(Enforcer=user_status, name=sender.first_name))
     else:
-        await System.send_file(event.chat_id, SHTART_IMG, caption=shtart.format(Enforcer=user_status, name=sender.first_name))
+        await System.send_file(event.chat_id, SHTART_IMG, caption=shtart_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()    
 
 
