@@ -11,6 +11,10 @@ shtart_string = """
 ʜᴇʏ {name} ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀᴄᴛɪᴠᴇ....
 """
 
+ping_string = """
+ＰＯＮＧ !! Ｏ(≧∇≦)Ｏ
+"""
+
 # Make sure not to change these too much
 # If you still wanna change it change the regex too
 scan_request_string = """
