@@ -8,12 +8,7 @@ on_string = """
 """
 
 shtart_string = """
-「 ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ 」
-━━━━━━━━━━━━━━━
-۞ ʀᴀɴᴋ : {Enforcer}
-۞ ɴᴀᴍᴇ : {name}
-━━━━━━━━━━━━━━━
-「 ꜱʏꜱᴛᴇᴍ ᴜᴘᴅᴀᴛᴇꜱ - [ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ](t.me/voidsystem) 」
+start ho chuka hu dosto!
 """
 
 # Make sure not to change these too much
