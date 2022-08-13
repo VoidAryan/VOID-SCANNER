@@ -55,7 +55,7 @@ async def status(event):
     if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
         await System.send_file(event.chat_id, NINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     if user_status == 'ɪɴꜱᴘᴇᴄᴛᴏʀ':
-        await System.send_file(event.chat_id, ɪINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
+        await System.send_file(event.chat_id, IINFO, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     else:
         await System.send_file(event.chat_id, INFOPIC, caption=on_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()
