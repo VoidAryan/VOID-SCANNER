@@ -76,6 +76,7 @@ async def status(event):
     msg = await event.reply("ᴘɪɴɢɪɴɢ....")
     time.sleep(1)
     msg.edit = await event.reply("ＰＯＮＧ !!")
+    await msg.delete()
     
 @System.on(system_cmd(pattern="vstats"))
 async def stats(event):
