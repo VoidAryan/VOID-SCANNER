@@ -301,31 +301,40 @@ async def redirect(event) -> None:
 
 
 help_plus = """
-[×](https://telegra.ph/file/5403e3fb7685bcf8bf7b2.jpg) Help!
+۞  ʜᴇʟᴘ!
 
-`addenf` - Adds a user as an enforcer.
-Format : addenf <user id / as reply>
-`rmenf` - Removes a user from enforcers.
-Format : rmenf <user id / as reply>
-`enforcers` - Lists all enforcers.
-`addins` - Adds a user as an Inspector.
-Format : addins <user id / as reply>
-`rmins` - Removes a user from Inspector.
-Format : rmins <user id / as reply>
-`inspector` - Lists all inspectors.
-`join` - Joins a chat.
-Format : join <chat username or invite link>
-`leave` - Leaves a chat.
-Format : leave <chat username or id>
-`resolve` - Resolve a chat invite link.
-Format : resolve <chat invite link>
-`get_redirect` - Follows redirect of a link.
-Format : get_redirect <URL>
+→  ᴀᴅᴅᴇɴғ  -  ᴀᴅᴅs  ᴀ  ᴜsᴇʀ  ᴀs  ᴀɴ  ᴇɴғᴏʀᴄᴇʀ.
+ғᴏʀᴍᴀᴛ  :  ᴀᴅᴅᴇɴғ  <ᴜsᴇʀ  ɪᴅ  /  ᴀs  ʀᴇᴘʟʏ>
 
-**Notes:**
-`/` `?` `.` `!` are supported prefixes.
+→  ʀᴍᴇɴғ  -  ʀᴇᴍᴏᴠᴇs  ᴀ  ᴜsᴇʀ  ғʀᴏᴍ  ᴇɴғᴏʀᴄᴇʀs.
+ғᴏʀᴍᴀᴛ  :  ʀᴍᴇɴғ  <ᴜsᴇʀ  ɪᴅ  /  ᴀs  ʀᴇᴘʟʏ>
 
-**Example:** `/addenf` or `?addenf` or `.addenf`
+→  ᴇɴғᴏʀᴄᴇʀs  -  ʟɪsᴛs  ᴀʟʟ  ᴇɴғᴏʀᴄᴇʀs.
+
+→  ᴀᴅᴅɪɴs  -  ᴀᴅᴅs  ᴀ  ᴜsᴇʀ  ᴀs  ᴀɴ  ɪɴsᴘᴇᴄᴛᴏʀ.
+ғᴏʀᴍᴀᴛ  :  ᴀᴅᴅɪɴs  <ᴜsᴇʀ  ɪᴅ  /  ᴀs  ʀᴇᴘʟʏ>
+
+→  ʀᴍɪɴs  -  ʀᴇᴍᴏᴠᴇs  ᴀ  ᴜsᴇʀ  ғʀᴏᴍ  ɪɴsᴘᴇᴄᴛᴏʀ.
+ғᴏʀᴍᴀᴛ  :  ʀᴍɪɴs  <ᴜsᴇʀ  ɪᴅ  /  ᴀs  ʀᴇᴘʟʏ>
+
+→  ɪɴsᴘᴇᴄᴛᴏʀs  -  ʟɪsᴛs  ᴀʟʟ  ɪɴsᴘᴇᴄᴛᴏʀᴊᴏɪɴ
+
+→  ᴊᴏɪɴ  -  ᴊᴏɪɴs  ᴀ  ᴄʜᴀᴛ.
+ғᴏʀᴍᴀᴛ  :  ᴊᴏɪɴ  <ᴄʜᴀᴛ  ᴜsᴇʀɴᴀᴍᴇ  ᴏʀ  ɪɴᴠɪᴛᴇ  ʟɪɴᴋ>
+
+→  ʟᴇᴀᴠᴇ  -  ʟᴇᴀᴠᴇs  ᴀ  ᴄʜᴀᴛ.
+ғᴏʀᴍᴀᴛ  :  ʟᴇᴀᴠᴇ  <ᴄʜᴀᴛ  ᴜsᴇʀɴᴀᴍᴇ  ᴏʀ  ɪᴅ>
+
+→  ʀᴇsᴏʟᴠᴇ  -  ʀᴇsᴏʟᴠᴇ  ᴀ  ᴄʜᴀᴛ  ɪɴᴠɪᴛᴇ  ʟɪɴᴋ.
+ғᴏʀᴍᴀᴛ  :  ʀᴇsᴏʟᴠᴇ  <ᴄʜᴀᴛ  ɪɴᴠɪᴛᴇ  ʟɪɴᴋ>
+
+→  ɢᴇᴛ_ʀᴇᴅɪʀᴇᴄᴛ  -  ғᴏʟʟᴏᴡs  ʀᴇᴅɪʀᴇᴄᴛ  ᴏғ  ᴀ  ʟɪɴᴋ.
+ғᴏʀᴍᴀᴛ  :  ɢᴇᴛ_ʀᴇᴅɪʀᴇᴄᴛ  <ᴜʀʟ>
+
+۞  ɴᴏᴛᴇs:
+/  ?  .  !  ᴀʀᴇ  sᴜᴘᴘᴏʀᴛᴇᴅ  ᴘʀᴇғɪxᴇs.
+
+ᴇxᴀᴍᴘʟᴇ:  /ᴀᴅᴅᴇɴғ  ᴏʀ  ?ᴀᴅᴅᴇɴғ  ᴏʀ  .ᴀᴅᴅᴇɴғ
 """
 
 __plugin_name__ = "extras"
