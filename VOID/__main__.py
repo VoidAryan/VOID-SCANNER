@@ -6,7 +6,7 @@ from VOID import (
     ENFORCERS,
     Sibyl_logs,
 )
-from VOID.strings import on_string, shtart_string
+from VOID.strings import on_string, shtart_string, ping_string
 from telethon import events, custom, Button
 import logging
 import importlib
@@ -71,7 +71,17 @@ async def status(event):
         await System.send_file(event.chat_id, START_IMG, caption=shtart_string.format(Enforcer=user_status, name=sender.first_name))
     await msg.delete()    
 
-
+@System.on(events.NewMessage(pattern=r"[/|\.|\?|!]ping"))
+async def status(event):
+    msg = await event.reply("ᴘɪɴɢɪɴɢ....")
+    sender = await event.get_sender()
+    user_status = "ɪɴꜱᴘᴇᴄᴛᴏʀ" if sender.id in INSPECTORS else "ᴇɴғᴏʀᴄᴇʀ" if sender.id in ENFORCERS else 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ'
+    if user_status == 'ɴᴏʀᴍᴀʟ ᴜꜱᴇʀ':
+        await System.event.reply(event.chat_id, caption=ping_string.format(Enforcer=user_status, name=sender.first_name))
+    else:
+        await System.event.reply(event.chat_id, caption=ping_string.format(Enforcer=user_status, name=sender.first_name))
+    await msg.delete()    
+    
 @System.on(system_cmd(pattern="vstats"))
 async def stats(event):
     msg = f"❂ ᴍᴇꜱꜱᴀɢᴇꜱ ᴘʀᴏᴄᴇꜱꜱᴇᴅ : {System.processed}"
