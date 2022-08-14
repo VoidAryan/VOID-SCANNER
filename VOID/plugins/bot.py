@@ -33,7 +33,7 @@ async def sup(event):
 [Button.url ('ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ' , 'https://t.me/voidsystem')]
 
 ]
-    await System.bot.send_message(event.chat_id, VOID_IMG, caption="""
+    await System.bot.upload_file(event.chat_id, VOID_IMG, caption="""
 ʜᴇʏ,
 ───────────────────────
 ❂ ɪᴍ ᴠᴏɪᴅ Sʏꜱᴛᴇᴍ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ [【V๏ɪ፝֟𝔡】Network](t.me/voidxnetwork)
