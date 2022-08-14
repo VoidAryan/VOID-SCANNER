@@ -95,7 +95,7 @@ association_scan_request = {}
             "store_true",
         ),
         Flag(
-            "-all",
+            "-a",
             "Blacklist all admins of a chat using this flag.",
             nargs="*",
             default=None
