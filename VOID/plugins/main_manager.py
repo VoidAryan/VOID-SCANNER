@@ -76,7 +76,7 @@ async def is_member(event, chat_id, user_id):
 association_scan_request = {}
 
 @System.command(
-    e=system_cmd(pattern=r"vscan ", allow_enforcer=True),
+    e=system_cmd(pattern=r"vscan", allow_enforcer=True),
     group="main",
     help="ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ꜱᴘᴇᴄɪғɪᴄ ʀᴇᴀꜱᴏɴ ᴛᴏ ꜱᴇɴᴅ ʀᴇϙᴜᴇꜱᴛ ғᴏʀ ɪɴꜱᴘᴇᴄᴛ ᴀᴛ @Void_Support",
     flags=[
