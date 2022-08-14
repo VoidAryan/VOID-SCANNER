@@ -10,6 +10,7 @@ data = []
 DATA_LOCK = asyncio.Lock()
 
 VOID_IMG = "https://telegra.ph/file/720bbed1c8c67ae973cfa.jpg"
+N_IMG = "https://telegra.ph/file/fe148f3e62dea625f98c7.jpg"
 
 async def get_message_paste(message: str):
     async with session.post(
@@ -38,13 +39,10 @@ async def sup(event):
 ───────────────────────
 ❂ ɪᴍ ᴠᴏɪᴅ Sʏꜱᴛᴇᴍ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ [【V๏ɪ፝֟𝔡】Network](t.me/voidxnetwork)
 
-
 ❂ ᴛʜɪꜱ ꜱᴄᴀɴɴᴇʀ ɪꜱ ᴛᴏ ᴋᴇᴇᴘ ᴜꜱ ꜱᴀғᴇ ғʀᴏᴍ ᴛᴏxɪᴄɪᴛʏ ᴏᴠᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ʙʏ ɢʙᴀɴɴɪɴɢ ᴛᴏxɪᴄ ᴜꜱᴇʀ ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ
 ───────────────────────
 
-━━━━━━━━━━━━━━━
-[ꜱᴜᴘᴘᴏʀᴛ](t.me/voidxbots) || [ꜱᴄᴀɴꜱ](t.me/voidxgbans)
-━━━━━━━━━━━━━━━
+[ꜱᴜᴘᴘᴏʀᴛ](t.me/void_support) | [Sʏꜱᴛᴇᴍ](t.me/voidsystem)
     """, buttons=buttons)
                      
 @System.bot.on(events.NewMessage(pattern="[/!?]void"))
@@ -53,10 +51,11 @@ async def sup(event):
 [Button.url('【V๏ɪ፝֟𝔡】◈Network◈', 'https://t.me/voidxnetwork')],
 
 ]
-    await event.reply("""
-Welcome [✨](https://telegra.ph/file/fe148f3e62dea625f98c7.jpg) to [【V๏ɪ፝֟𝔡】 ✧Network✧ ](t.me/voidxnetwork)
+    await System.bot.send_file(event.chat_id, N_IMG, caption="""
+[【V๏ɪ፝֟𝔡】 ✧Network✧ ](t.me/voidxnetwork)
 
-◈ Void is an anime based Community with a motive to spread love and peace around telegram. Go through the channel and join the Community if it draws your attention. ◈
+◈ Void is an anime based Community with a motive to spread love and peace around telegram.
+Go through the channel and join the Community if it draws your attention. ◈
     """, buttons=buttons)
 
 @System.bot.on(events.NewMessage(pattern="[/!?]help"))
