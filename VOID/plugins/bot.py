@@ -9,6 +9,7 @@ import asyncio
 data = []
 DATA_LOCK = asyncio.Lock()
 
+VOID_IMG = "https://telegra.ph/file/720bbed1c8c67ae973cfa.jpg"
 
 async def get_message_paste(message: str):
     async with session.post(
@@ -32,10 +33,11 @@ async def sup(event):
 [Button.url ('ᴠᴏɪᴅ ꜱʏꜱᴛᴇᴍ' , 'https://t.me/voidsystem')]
 
 ]
-    await event.reply("""
-[👋](https://telegra.ph/file/0a69be5ac581fab0c9ac0.jpg) ʜᴇʏ,
+    await System.bot.send_file(VOID_IMG, caption="""
+ʜᴇʏ,
 ───────────────────────
 ❂ ɪᴍ ᴠᴏɪᴅ Sʏꜱᴛᴇᴍ  ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ғᴏʀ [【V๏ɪ፝֟𝔡】Network](t.me/voidxnetwork)
+
 
 ❂ ᴛʜɪꜱ ꜱᴄᴀɴɴᴇʀ ɪꜱ ᴛᴏ ᴋᴇᴇᴘ ᴜꜱ ꜱᴀғᴇ ғʀᴏᴍ ᴛᴏxɪᴄɪᴛʏ ᴏᴠᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ʙʏ ɢʙᴀɴɴɪɴɢ ᴛᴏxɪᴄ ᴜꜱᴇʀ ғʀᴏᴍ ᴍᴀɴʏ ʙᴏᴛꜱ ᴀᴛ ᴀ ᴛɪᴍᴇ
 ───────────────────────
