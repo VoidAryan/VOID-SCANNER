@@ -102,7 +102,7 @@ async def status(event):
         await event.reply(msg)
         return
     if help_for in HELP:
-        await System.send_message(HELP[help_for].help_plus)
+        await event.reply(HELP[help_for].help_plus)
     else:
         return
 
