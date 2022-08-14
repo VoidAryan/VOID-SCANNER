@@ -119,7 +119,7 @@ async def scan(event, flags):
             return
         reason = seprate_flags(split[1]).strip()
     else:
-        await event.return("→ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\n→ ᴜꜱᴇ -r {ʀᴇᴀꜱᴏɴ}")
+        await event.reply("→ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\n→ ᴜꜱᴇ -r {ʀᴇᴀꜱᴏɴ}")
         return
     if flags.u:
         url = flags.u
