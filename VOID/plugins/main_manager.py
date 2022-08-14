@@ -76,9 +76,9 @@ async def is_member(event, chat_id, user_id):
 association_scan_request = {}
 
 @System.command(
-    e=system_cmd(pattern=r"scan ", allow_enforcer=True),
+    e=system_cmd(pattern=r"vscan ", allow_enforcer=True),
     group="main",
-    help="Reply to a message WITH reason to send a request to Inspect in Iɴꜰɪɴɪᴛᴇ • SᴄᴀɴɴᴇƦ",
+    help="ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ꜱᴘᴇᴄɪғɪᴄ ʀᴇᴀꜱᴏɴ ᴛᴏ ꜱᴇɴᴅ ʀᴇϙᴜᴇꜱᴛ ғᴏʀ ɪɴꜱᴘᴇᴄᴛ ᴀᴛ @Void_Support",
     flags=[
         Flag(
             "-f",
@@ -95,7 +95,7 @@ association_scan_request = {}
             "store_true",
         ),
         Flag(
-            "-a",
+            "-all",
             "Blacklist all admins of a chat using this flag.",
             nargs="*",
             default=None
@@ -119,7 +119,7 @@ async def scan(event, flags):
             return
         reason = seprate_flags(split[1]).strip()
     else:
-        await event.reply("You need to provide me a valid reason to blacklist them.\nUse scan with -r reason here")
+        await event.return("→ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\n→ ᴜꜱᴇ -r {ʀᴇᴀꜱᴏɴ}")
         return
     if flags.u:
         url = flags.u
@@ -132,12 +132,12 @@ async def scan(event, flags):
                 int(data[0]) if data[0].isnumeric() else data[0], ids=int(data[1])
             )
         except:
-            await event.reply("Failed to get data from url")
+            await event.reply("ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴅᴀᴛᴀ ғʀᴏᴍ ᴜʀʟ...")
             return
         executer = await event.get_sender()
         executor = f"[{executer.first_name}](tg://user?id={executer.id})"
         if not message:
-            await event.reply("Failed to get data from url")
+            await event.reply("ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ")
             return
         if message.from_id.user_id in ENFORCERS:
             return
@@ -192,7 +192,7 @@ async def scan(event, flags):
         
         creator, admins = await get_chat_creator_and_admins(event, ts_chat.id, True)
 
-        await event.reply("ʀᴇϙᴜᴇꜱᴛɪɴɢ ꜱᴄᴀɴ ᴜɴᴅᴇʀ ᴠᴏɪᴅ....")
+        await event.reply("ʀᴇϙᴜᴇꜱᴛɪɴɢ ꜱᴄᴀɴ ᴜɴᴅᴇʀ @Void_Support....")
 
         if flags.f and executer.id in INSPECTORS:
             msg = await System.send_message(
@@ -248,7 +248,7 @@ async def scan(event, flags):
     if replied.media:
         await replied.forward_to(Sibyl_logs)
     
-    await event.reply("ʀᴇϙᴜᴇꜱᴛᴇᴅ ᴅɪꜱᴀꜱᴛᴇʀ ꜱᴄᴀɴ...")
+    await event.reply("ʀᴇϙᴜᴇꜱᴛᴇᴅ ᴅɪꜱᴀꜱᴛᴇʀ ꜱᴄᴀɴ ғʀᴏᴍ @Void_Support...")
     if req_proof and req_user:
         await replied.forward_to(Sibyl_logs)
         await System.gban(
@@ -295,7 +295,7 @@ async def revive(event):
     executor = await event.get_sender()
     if event.sender_id in ENFORCERS:
         chatlink = f"t.me/c/{(str(event.chat_id)).replace('-100', '')}/{event.id}"
-        await event.reply("Connecting to ᴠᴏɪᴅ • SᴄᴀɴɴᴇƦ for a cymatic revert.")
+        await event.reply("ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ @VoidSystem ғᴏʀ ʀᴇᴠᴇʀᴛ ʀᴇϙᴜᴇꜱᴛ...")
         msg = await System.send_message(Sibyl_logs, revert_request_string.format(enforcer=executor.id, spammer=int(user_id), chat=chatlink))
         revert_request[msg.id] = {"user_id":user_id, "chat_id":event.chat_id, "msg_id":event.id}
         return
@@ -303,14 +303,14 @@ async def revive(event):
     if not (
         await System.ungban(int(user_id), f" By //{(await event.get_sender()).id}")
     ):
-        await a.edit("User is not gbanned.")
+        await a.edit("ᴜꜱᴇʀ ɴᴏᴛ ʙʟᴀᴄᴋʟɪꜱᴛᴇᴅ ᴜɴᴅᴇʀ @VoidSystem.")
         return
-    await a.edit("Revert request sent to ᴠᴏɪᴅ • SᴄᴀɴɴᴇƦ. This might take 10minutes or so.")
+    await a.edit("Revert request sent to @Void_Support. This might take 10minutes or so.")
 
 
-@System.on(system_cmd(pattern=r"VOID logs"))
+@System.on(system_cmd(pattern=r"get logs"))
 async def logs(event):
-    await System.send_file(event.chat_id, "log.txt")
+    await System.send_file(event.chat_id, "@VoidSystem ʟᴏɢꜱ\nlog.txt")
 
 @System.command(
     e = system_cmd(pattern=r"approve", allow_inspectors=True, force_reply=True),
