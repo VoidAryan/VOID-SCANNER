@@ -75,8 +75,8 @@ async def status(event):
 async def status(event):
     msg = await event.reply("ᴘɪɴɢɪɴɢ....")
     time.sleep(1)
-    await msg.edit(ping_string.format(Enforcer=user_status, name=sender.first_name))
-
+    msg.edit = await event.reply("ＰＯＮＧ !!")
+await msg.delete()
     
 @System.on(system_cmd(pattern="vstats"))
 async def stats(event):
