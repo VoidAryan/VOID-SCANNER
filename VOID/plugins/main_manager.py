@@ -119,7 +119,7 @@ async def scan(event, flags):
             return
         reason = seprate_flags(split[1]).strip()
     else:
-        await event.reply("→ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\n→ ᴜꜱᴇ -r {ʀᴇᴀꜱᴏɴ}")
+        await event.return("→ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ʀᴇᴀꜱᴏɴ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\n→ ᴜꜱᴇ -r {ʀᴇᴀꜱᴏɴ}")
         return
     if flags.u:
         url = flags.u
@@ -310,7 +310,7 @@ async def revive(event):
 
 @System.on(system_cmd(pattern=r"get logs"))
 async def logs(event):
-    await System.send_file(event.chat_id, "@VoidSystem ʟᴏɢꜱ\nlog.txt")
+    await System.send_file(event.chat_id, "log.txt")
 
 @System.command(
     e = system_cmd(pattern=r"approve", allow_inspectors=True, force_reply=True),
