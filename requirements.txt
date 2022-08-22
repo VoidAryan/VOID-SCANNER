@@ -1,5 +1,4 @@
-telethon
-python-telegram-bot==13.13
+pyrogram
 TgCrypto
 telegraph
 apiClient
